@@ -24,7 +24,7 @@ Outside of all that stuff, I'm just a guy who likes:
 - Retro computers
 - Anything and everything about space
 - Music (Particularly metal, punk, and rock in general)
-    - I play guitar too!
+- I play guitar too!
 
 I think that's all about what I have to say about myself, really. It's really, _really_ difficult to write about, well, yourself, since there's only your perspective talking. If you think any of this is exciting, do check back for new posts!
 
