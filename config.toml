@@ -1,0 +1,55 @@
+# The URL the site will be built for
+base_url = "https://zackerthescar.com"
+
+# The site title and description; used in feeds by default.
+title = "Shaun's Site"
+description = "Shaun's Website"
+
+# The site theme to use.
+theme = "terminimal"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Tags
+taxonomies = [
+    {name = "tags"}
+]
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "boron"
+
+[extra]
+# Put all your custom variables here
+
+# Enable Unicode fonts
+use_full_hack_font = true
+
+# Site details
+logo_text = "Shaun's Site"
+author = "Shaun Loo"
+
+# Enable pagination
+enable_post_view_navigation = true
+post_view_navigation_prompt = "Read more"
+
+# Change color to green
+accent_color = "green"
+background_color = "blue"
+
+# Menu items
+menu_items = [
+    {name = "home", url = "$BASE_URL"},
+    {name = "about me", url = "$BASE_URL/about"},
+    {name = "tags", url = "$BASE_URL/tags"},
+    {name = "resume", url = "$BASE_URL/docs/resume_shaunloo_generic.pdf"},
+    {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true},
+]
+
+enable_post_view_navigation = true
