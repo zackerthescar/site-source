@@ -8,7 +8,7 @@ tags = ["about_me"]
 
 I'm Shaun, a 21 year old junior Computer Science student at the University of Minnesota. I'm particularly fond of C as that's where I cut my teeth in programming, but I've found lots of fun in writing OCaml too. (Perhaps this is my calling to learn Rust?)
 
-If you're a prospective employer, check out [my resume](/docs/resume_shaunloo_generic.pdf)!
+If you're a prospective employer, check out [my resume](/docs/resume_generic.pdf)!
 
 Of all the subfields in CS, I love the more low-level stuff like memory access optimization, and reverse engineering. It's no wonder that I loved [CSCI 2021 Machine Architecture](https://www-users.cse.umn.edu/~kauffman/2021/) so much! I might end up writing a blog post or two walking thru either the [infamous Bomb Lab](https://www.cs.wm.edu/~liqun/teaching/cs304/cs304_15f/labs/bomblab.html) or [efficient memory access methods for matrices](https://coffeebeforearch.github.io/2020/06/23/mmul.html) sometime, so stay tuned!
 
