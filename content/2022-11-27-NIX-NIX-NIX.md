@@ -103,6 +103,9 @@ enable early KMS on a NixOS configuration, edit `configuration.nix`
     ...
     ```
 
+    Note that `i915` is the Intel kernel module! Do `lsmod` to investigate
+    what modules you need rather than blindly using `i915`!
+
 # Even more to talk about
 
 There is a _lot_ to the Nix ecosystem, as you can see from the trinity at the
