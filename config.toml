@@ -48,7 +48,7 @@ menu_items = [
     {name = "home", url = "$BASE_URL"},
     {name = "about me", url = "$BASE_URL/about"},
     {name = "tags", url = "$BASE_URL/tags"},
-    {name = "resume", url = "$BASE_URL/docs/resume_generic.pdf"},
+    {name = "resume", url = "$BASE_URL/docs/resume_shaunloo.pdf"},
     {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true},
 ]
 
