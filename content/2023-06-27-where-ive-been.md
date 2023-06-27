@@ -64,7 +64,7 @@ I'm planning to write a short series of blogposts on this site explaining
 the stuff that goes into your codecs, from audio to video, and generally
 just nerd out about digital audio and video in an accessible manner! Sort
 of a more approachable version of 
-[xiphmont's amazing "Digital Media Primer](https://www.youtube.com/watch?v=FG9jemV1T7I).
+[xiphmont's amazing "Digital Media Primer"](https://www.youtube.com/watch?v=FG9jemV1T7I).
 Stay tuned for those!
 
 I'm also planning to write an article or two about `x86_64` assembly, SIMD,
