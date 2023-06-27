@@ -10,25 +10,23 @@ tags = ["posts", "blog", "life", "gsoc", "ffmpeg", "digital"]
 
 I'm not sure if it come across, but I've never exactly been the loud kid. If
 you've met me IRL, you know I tend to not have much to say, even if I'm pretty
-comfortable with you. The same goes for this blog! I just really don't have
-much to say!
+comfortable with you. The same goes for this blog!
 
 The time in between the last post and this has been a whirlwind, though. I
 suppose an update is in order.
 
 # Another year in the bag
 
-I took an entire year of purely compsci classes, and I seemed to have done
+I took an entire year of purely compsci classes, and I seem to have done
 pretty well by all metrics! These classes were all of great interest to me,
-but even then I may have had to sell my soul to the devil for the grades I
-got in the end.
+but even then I had to sell my soul to the devil for the grades I earned.
 
 The classes that were particularly memorable were Operating Systems, Formal
 Languages and Automata Theory, and Introduction to Parallel Programming. The
 professors for these classes truly are GOATs, and the content were really
 engaging.
 
-This was the first year that I TA'ed for, and I would like to think I was
+This was the first year that I TA'ed for, too. I would like to think I was
 a competent TA, if not a little too un-serious at times. 
 
 # Summer of Everything

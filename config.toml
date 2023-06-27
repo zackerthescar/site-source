@@ -53,9 +53,14 @@ menu_items = [
     {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true},
 ]
 
-88x31 = [ 
+88x31 = [
+    {name = "macos", img = "macos.gif", url = "https://apple.com/macos"},
     {name = "debian", img = "debian.gif", url = "https://www.debian.org/"},
     {name = "freebsd", img = "freebsd.gif", url = "https://FreeBSD.org/"},
+    {name = "torrent", img = "torrent.gif", url = "#"},
+    {name = "ffmpeg", img = "ffmpeg.gif", url = "https://ffmpeg.org/"},
+    {name = "firefox", img = "firefox4.gif", url = "https://mozilla.com/firefox/"},
+    {name = "wii", img = "wii.gif", url = "#"},
  ]
 
 page_titles = "combined"
