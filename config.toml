@@ -53,4 +53,9 @@ menu_items = [
     {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true},
 ]
 
+88x31 = [ 
+    {name = "debian", img = "debian.gif", url = "https://www.debian.org/"},
+    {name = "freebsd", img = "freebsd.gif", url = "https://FreeBSD.org/"},
+ ]
+
 page_titles = "combined"
