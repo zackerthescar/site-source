@@ -3,7 +3,7 @@ base_url = "https://zackerthescar.com"
 
 # The site title and description; used in feeds by default.
 title = "Shaun's Site"
-description = "Shaun's Website"
+description = "Shaun's Little Space"
 
 # The site theme to use.
 theme = "terminimal"
@@ -47,9 +47,10 @@ background_color = "blue"
 menu_items = [
     {name = "home", url = "$BASE_URL"},
     {name = "about me", url = "$BASE_URL/about"},
-    {name = "tags", url = "$BASE_URL/tags"},
+    {name = "archive", url = "$BASE_URL/archive"},
     {name = "resume", url = "$BASE_URL/docs/resume_shaunloo.pdf"},
+    {name = "links", url = "$BASE_URL/links"},
     {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true},
 ]
 
-enable_post_view_navigation = true
+page_titles = "combined"
