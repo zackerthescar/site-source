@@ -95,14 +95,12 @@
     {% block footer %}
     <footer class="footer">
         <!- Thanks Nadia!->
-        <nav class="socials nav-navs">
-            <center>
-            {%- for button in config.extra.88x31 -%}
+        <nav style="justify-content: center; flex-grow: 0; display: flex; flex-wrap: wrap; align-items: flex-end;">
+        {%- for button in config.extra.88x31 -%}
             <a href={{button.url}}>
-                <img alt={{ button.name }} title={{ button.name }} src="{{config.base_url}}/88x31/{{ button.img }}" width=88px height=31px style="float:left"/>
+                <img alt={{ button.name }} title={{ button.name }} src="{{config.base_url}}/88x31/{{ button.img }}" width=88px height=31px />
             </a>
-            {%- endfor -%}
-            </center>
+        {%- endfor -%}
         </nav>
         <br><br>
         <div class="footer__inner">
