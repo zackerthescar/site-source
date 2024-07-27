@@ -76,4 +76,4 @@ the firmware on your various networking devices.)
 
 2. Re-working the networking setup in the server closet such that we don't rely on 
 Peg DHCP anymore. (This is a project in the works with multiple people on the new 
-ACM UMN Systems Committee. Stay tuned to see how this goes.)
+ACM UMN Systems Committee. Stay tuned to see how this goes.

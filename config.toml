@@ -2,8 +2,8 @@
 base_url = "https://zackerthescar.com"
 
 # The site title and description; used in feeds by default.
-title = "Shaun's Site"
-description = "Shaun's Little Space"
+title = "r/l/s"
+description = "r/l/s blog of whatever"
 
 # The site theme to use.
 theme = "terminimal"
@@ -32,8 +32,8 @@ highlight_theme = "boron"
 use_full_hack_font = true
 
 # Site details
-logo_text = "Shaun's Site"
-author = "Shaun Loo"
+logo_text = "r/l/s"
+author = "r/l/s"
 
 # Enable pagination
 enable_post_view_navigation = true

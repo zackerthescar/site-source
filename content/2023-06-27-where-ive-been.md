@@ -73,4 +73,5 @@ and Organization next semester, so not only will this be a resource for future
 students, but also gives me a chance to practice elegantly explaining this stuff!
 
 Till next time,
-Shaun
+
+r/l/s

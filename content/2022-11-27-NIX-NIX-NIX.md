@@ -114,4 +114,5 @@ ecosystem, just one piece of it. I really do encourage you to try it out on
 your own, and do stay tuned for my `NixOS` updates!
 
 Til next time, 
-Shaun.
+
+r/l/s
