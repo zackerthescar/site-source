@@ -169,7 +169,7 @@ then try running `nixos-rebuild switch`...
 > Hey, it's been three hours and nixos is trying to rebuild all of
 > KDE from source. What the hell is going on?
 
-We're running into the issue that the` ffmpeg` package is no longer what
+We're running into the issue that the `ffmpeg` package is no longer what
 `nixpkgs` says it is - we've overridden it, and NixOS needs to evaluate
 if the system even compiles with the new config. Obviously, we want to 
 avoid that. We want to use binaries that other people spent their precious
