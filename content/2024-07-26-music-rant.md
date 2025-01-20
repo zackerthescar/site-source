@@ -157,4 +157,4 @@ you see fit!
 
 End of rant,
 
-r/l/s
+r/c/s

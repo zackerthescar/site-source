@@ -74,4 +74,4 @@ students, but also gives me a chance to practice elegantly explaining this stuff
 
 Till next time,
 
-r/l/s
+r/c/s

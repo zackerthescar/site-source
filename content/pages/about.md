@@ -3,15 +3,14 @@ title = "About me"
 path = "about"
 +++
 
-I'm Shaun, a 22 year old senior Computer Science student at the University 
-of Minnesota. I'm particularly fond of C as that's where I cut my teeth in 
-programming, but I've found lots of fun in writing OCaml too. 
-(Perhaps this is my calling to learn Rust?)
+I'm r/c/s, a 23 year old 1st year graduate Computer Science student 
+at the University of Minnesota. I'm particularly fond of C as there's
+where I cut my teeth, but I can just about grok any codebase under the sun in munutes.
 
 If you're a prospective employer, check out 
 [my resume](/docs/resume_shaunloo.pdf)!
 
-Of all the subfields in CS, I love the more low-level stuff like memory access 
+Of all the subfields in CS, I love the low-level stuff like memory access 
 optimization, and reverse engineering. It's no wonder that I loved 
 [CSCI 2021 Machine Architecture](https://www-users.cse.umn.edu/~kauffman/2021/)
 so much! I might end up writing a blog post or two walking thru either the 
@@ -30,8 +29,8 @@ dumpster fire!
 (There's IPs owned by the club that respond to pings that aren't 
 accounted for - yet.)
 
-Outside of CS, I'm a huge audio nerd! I'm the Studio Engineer at 
-[Radio K](https://radiok.org), and I'm a DJ there too! An awkward CS 
+Outside of CS, I'm a huge audio nerd! I was the Studio Engineer at 
+[Radio K](https://radiok.org), and I'm currently a DJ there. An awkward CS 
 student in the booth cracking terrible jokes and playing everything from hot 
 garbage to GOAT tracks seems odd, but it's more common than you think!
 
@@ -42,7 +41,7 @@ personnel there are extremely friendly and approchable.
 Outside of all that stuff, I'm just a guy who likes:
 - Retro computers, from mid-90s 486s to Sun workstations
 - Anything and everything about space
-- Music, from 80s thrash metal to chiptune
+- Music, from 80s thrash metal to chiptune, pop-punk to jazz.
 
 I think that's all about what I have to say about myself, really. It's really,
 _really_ difficult to write about, well, yourself, since there's only one 
@@ -51,4 +50,4 @@ new posts!
 
 Till next time, 
 
-Shaun.
+r/c/s.

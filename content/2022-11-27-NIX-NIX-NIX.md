@@ -115,4 +115,4 @@ your own, and do stay tuned for my `NixOS` updates!
 
 Til next time, 
 
-r/l/s
+r/c/s
