@@ -57,7 +57,6 @@ menu_items = [
     {name = "macos", img = "macos.gif", url = "https://apple.com/macos"},
     {name = "debian", img = "debian.gif", url = "https://www.debian.org/"},
     {name = "freebsd", img = "freebsd.gif", url = "https://FreeBSD.org/"},
-    {name = "torrent", img = "torrent.gif", url = "#"},
     {name = "ffmpeg", img = "ffmpeg.gif", url = "https://ffmpeg.org/"},
     {name = "firefox", img = "firefox4.gif", url = "https://mozilla.com/firefox/"},
     {name = "wii", img = "wii.gif", url = "#"},
