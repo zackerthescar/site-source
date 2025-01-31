@@ -86,4 +86,4 @@ and mental health apply. Refer to the syllabus of the course for details.
 
 The parts about respect, dignity, and academic integrity
 are of some concern here - I expect you to respect the course materials
-enough to *not ChatGPT it*!
+enough to *not ChatGPT it*! 

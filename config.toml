@@ -57,14 +57,20 @@ menu_items = [
 88x31 = [
     {name = "macos", img = "macos.gif", url = "https://apple.com/macos"},
     {name = "debian", img = "debian.gif", url = "https://www.debian.org/"},
-    {name = "freebsd", img = "freebsd.gif", url = "https://FreeBSD.org/"},
     {name = "ffmpeg", img = "ffmpeg.gif", url = "https://ffmpeg.org/"},
     {name = "firefox", img = "firefox4.gif", url = "https://mozilla.com/firefox/"},
+    {name = "csh", img = "csh.gif", url = "https://carseatheadrest.bandcamp.com/album/twin-fantasy"},
     {name = "wii", img = "wii.gif", url = "#"},
     {name = "color", img = "color.png", url = "#"},
+    {name = "xp", img = "xp.gif", url = "#"},
+    {name = "xenia", img = "xeniatrans_now.gif", url = "#"},
     {name = "rainbow", img = "rainbow.gif", url = "https://thetrevorproject.org/"},
     {name = "bi", img = "bi.png", url = "#"},
+    {name = "trans", img = "trans.png", url = "#"},
     {name = "enby", img = "enby.png", url = "#"},
+    {name = "dolby", img = "dolby_digital.gif", url = "#"},
+    {name = "web3", img = "web3.gif", url = "#"},
+    {name = "mt32", img = "mt32now.gif", url = "#"}
  ]
 
 page_titles = "combined"
