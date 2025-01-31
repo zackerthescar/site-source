@@ -47,6 +47,7 @@ background_color = "blue"
 menu_items = [
     {name = "home", url = "$BASE_URL"},
     {name = "about me", url = "$BASE_URL/about"},
+    {name = "csci2021-s25", url = "$BASE_URL/csci2021-s25"},
     {name = "archive", url = "$BASE_URL/archive"},
     {name = "resume", url = "$BASE_URL/docs/resume_shaunloo.pdf"},
     {name = "links", url = "$BASE_URL/links"},
