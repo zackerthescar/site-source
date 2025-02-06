@@ -18,7 +18,7 @@ jobs:
       run: snap install --edge zola
     - name: Build with Zola
       run: zola build 
-      - name: Verify build output
+    - name: Verify build output
       run:
         # Check if the build output directory exists
         if [ ! -d "public" ]; then
