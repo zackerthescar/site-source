@@ -15,13 +15,11 @@ jobs:
       with:
         submodules: 'true'
     - name: Install Zola
-      run: |
-        snap install --edge zola
+      run: snap install --edge zola
     - name: Build with Zola
-      run: |
-        zola build 
+      run: zola build 
       - name: Verify build output
-      run: |
+      run:
         # Check if the build output directory exists
         if [ ! -d "public" ]; then
           echo "Zola build failed: 'public' directory not found."
