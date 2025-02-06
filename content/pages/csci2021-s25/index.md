@@ -80,7 +80,7 @@ first name), I expect you to treat me and other students in the
 course as equals (I'm also a student, after all), 
 and with respect and dignity. 
 
-~~[pov](/static/img/me_in_office_hours.jpg) you come to keller 2-209~~
+~~[pov](/img/me_in_office_hours.jpg) you come to keller 2-209~~
 
 All UMN policies w.r.t academic integrity and freedom, 
 disability accomidation and services, sexual harrassment and assult, 
