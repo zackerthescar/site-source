@@ -1,0 +1,30 @@
+name: Test build Zola Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Grab source
+      uses: actions/checkout@v4
+      with:
+        submodules: 'true'
+    - name: Install Zola
+      run: |
+        snap install --edge zola
+    - name: Build with Zola
+      run: |
+        zola build 
+      - name: Verify build output
+      run: |
+        # Check if the build output directory exists
+        if [ ! -d "public" ]; then
+          echo "Zola build failed: 'public' directory not found."
+          exit 1
+        fi
+        echo "Zola build succeeded!"
