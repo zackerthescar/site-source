@@ -30,6 +30,8 @@ jobs:
       with:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
+    - name: Install rsync
+      run: sudo apt update && sudo apt upgrade -y && sudo apt install rsync
     - name: Deploy to server
       run: |
         rsync -avz -e "ssh -J ${{ secrets.USER }}@${{ secrets.HOST }}" \
