@@ -1,4 +1,4 @@
-name: Test build Zola Site
+name: Build and deploy Zola Site
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Grab source
       uses: actions/checkout@v4
@@ -26,3 +25,13 @@ jobs:
           exit 1
         fi
         echo "Zola build succeeded!"
+    - name: Install SSH keys
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: ${{ secrets.KNOWN_HOSTS }}
+    - name: Deploy to server
+      run: |
+        rsync -avz -e "ssh -J ${{ secrets.USER }}@${{ secrets.HOST }}" \
+          --delete public/ \
+          ${{ secrets.USER }}@${{ secrets.HOST2 }}:/var/www/html/
