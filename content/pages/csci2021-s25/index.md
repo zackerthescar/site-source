@@ -49,6 +49,13 @@ get started with Docker. Just ignore the AWS-y bits, that's more
     stuff, feel free to interrupt and ask me, I love explaining
     Docker commands!
 
+- [float.exposed](https://float.exposed) and 
+[integer.exposed](https://integer.exposed) tell you **exactly**
+how {floating point, integer} numbers work in binary. Indespensible
+calculators.
+    - [Ben Aubin's Float Calculator](https://observablehq.com/@benaubin/floating-point)
+    is a similar tool but can do arbitrary float specifications.
+
 - [The OSDev Wiki](https://wiki.osdev.org) has some amazing
 pages explaining the `x86-64` architecture that we study. I recommend
 the pages on [SysV ABI](https://wiki.osdev.org/System_V_ABI) and
