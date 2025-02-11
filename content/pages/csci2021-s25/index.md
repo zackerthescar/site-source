@@ -13,7 +13,7 @@ sections in Spring 2025.
 # Office Hours
 
 My office hours will be `Mondays 11:00am - 12:00pm` and `2:00pm-3:00pm`
-at `Keller Hall 2-209`. Officially, the `2:00pm - 3:00am` slot is 
+at `Keller Hall 2-209`. Officially, the `2:00pm - 3:00pm` slot is 
 dedicated to Professor Exley's `001` section, and the 
 `11:00am - 12:00pm` slot is dedicated to Professor Kolb's 
 `010` and `020` sections. I do not intend to keep
