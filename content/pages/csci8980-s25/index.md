@@ -31,7 +31,7 @@ LaTeX typeset PDF will be provided.
 - [Chapters 1-3](/csci8980-s25/chap1-3)
 - [Chapters 4-6 and 9](/csci8980-s25/chap4-6)
 - [Chapters 10-11](/csci8980-s25/chap10-11)
-- Chapters 12-13 omitted pending further reading...
+- Chapters 12-13 pending further reading...
 - [Chapters 14-15](/csci8980-s25/chap14-15)
 
 
