@@ -300,4 +300,9 @@ $e'$ such that $e \rightarrow e'$
             by 9.2c
             - $\texttt{ap}(e_1; e_2)$: 9.3d provides $\texttt{ap}(\texttt{lam}\{\tau\}(x.e);e_2) \rightarrow [e_2/x]e$
 
-
+You don't *need* to be this in-depth when reasoning about just an aspect
+of a language, but I feel that System T is a good jumping off point to see
+what a "full" proof of type safety looks like - every expression in the
+language is terminating. As we go into other languages in PFPL like System F
+and PCF, this won't be the case and the overall proofs get gnarlier (but are
+proofs, still).
