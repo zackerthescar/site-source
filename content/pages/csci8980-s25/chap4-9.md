@@ -197,52 +197,43 @@ $$\text{Exp } e ::= x | z | s(e) | \text{rec}(e)\{e_0;x.y.e_1\} | \text{lam}\{\t
 
 The statics of **T** are as follows:
 
-$$
+$$ \overline{\Gamma, x: \tau \vdash x: \tau} $$
 
-\overline{\Gamma, x: \tau \vdash x: \tau} \\
+$$ \overline{\Gamma \vdash z: \texttt{nat}} $$
 
-\overline{\Gamma \vdash z: \texttt{nat}} \\
+$$ \frac{\Gamma \vdash e: \texttt{nat}}{\Gamma \vdash s(e): \texttt{nat}} $$
 
-\frac{\Gamma \vdash e: \texttt{nat}}{\Gamma \vdash s(e): \texttt{nat}} \\
+$$ \frac{\Gamma \vdash e: nat \quad \Gamma \vdash e_0: \tau \quad \Gamma, x: \texttt{nat},y:\tau \vdash e_1: \tau}{\Gamma \vdash \texttt{rec}\{e_0; x.y.e_1\}(e): \tau} $$
 
-\frac{\Gamma \vdash e: nat \quad \Gamma \vdash e_0: \tau \quad \Gamma, x: \texttt{nat},y:\tau \vdash e_1: \tau}{\Gamma \vdash \texttt{rec}\{e_0; x.y.e_1\}(e): \tau} \\
+$$ \frac{\Gamma, x: \tau_1 \vdash e: \tau_2}{\Gamma \vdash \texttt{lam}\{\tau_1\}(x.e): \texttt{arr}(\tau_1;\tau_2)} $$
 
-\frac{\Gamma, x: \tau_1 \vdash e: \tau_2}{\Gamma \vdash \texttt{lam}\{\tau_1\}(x.e): \texttt{arr}(\tau_1;\tau_2)} \\
-
-\frac{\Gamma \vdash e_1: \texttt{arr}(\tau_2; \tau) \quad \Gamma \vdash e_2: \tau_2}{\Gamma \vdash \texttt{ap}(e_1; e_2) : \tau} \\
-$$
+$$ \frac{\Gamma \vdash e_1: \texttt{arr}(\tau_2; \tau) \quad \Gamma \vdash e_2: \tau_2}{\Gamma \vdash \texttt{ap}(e_1; e_2) : \tau} $$
 
 The dynamics of **T** are as follows:
 
-$$
+$$ \overline{z \texttt{ val}} $$
 
-\overline{z \texttt{ val}} \\
+$$ \frac{[e \texttt{ val}]}{s(e) \texttt{ val}} $$
 
-\frac{[e \texttt{ val}]}{s(e) \texttt{ val}} \\
+$$ \overline{\texttt{lam}\{\tau\}(x.e) \texttt{ val}} $$
 
-\overline{\texttt{lam}\{\tau\}(x.e) \texttt{ val}} \\
-
-$$
 
 These three are known as the **closure** rules.
 
-$$
 
-[\frac{e \rightarrow e'}{s(e) \rightarrow s(e')}] \\
+$$ [\frac{e \rightarrow e'}{s(e) \rightarrow s(e')}] $$
 
-\frac{e_1 \rightarrow e_1'}{\texttt{ap}(e_1;e_2) \rightarrow \texttt{ap}(e_1';e_2)} \\
+$$ \frac{e_1 \rightarrow e_1'}{\texttt{ap}(e_1;e_2) \rightarrow \texttt{ap}(e_1';e_2)} $$
 
-[\frac{e_1 \texttt{ val} \quad e_2 \rightarrow e_2'}{\texttt{ap}(e_1;e_2) \rightarrow \texttt{ap}(e_1;e_2')}] \\
+$$ [\frac{e_1 \texttt{ val} \quad e_2 \rightarrow e_2'}{\texttt{ap}(e_1;e_2) \rightarrow \texttt{ap}(e_1;e_2')}] $$
 
-\frac{[e_2 \texttt{ val}]}{\texttt{ap}(\texttt{lam}\{\tau\}(x.e);e_2) \rightarrow [e_2/x]e} \\
+$$ \frac{[e_2 \texttt{ val}]}{\texttt{ap}(\texttt{lam}\{\tau\}(x.e);e_2) \rightarrow [e_2/x]e} $$
 
-\frac{e \rightarrow e'}{\texttt{rec}\{e_0; x.y.e_1\}(e) \rightarrow \texttt{rec}\{e_0; x.y.e_1\}(e')} \\
+$$ \frac{e \rightarrow e'}{\texttt{rec}\{e_0; x.y.e_1\}(e) \rightarrow \texttt{rec}\{e_0; x.y.e_1\}(e')} $$
 
-\overline{\texttt{rec}\{e_0; x.y.e_1\}(z): e_0} \\
+$$ \overline{\texttt{rec}\{e_0; x.y.e_1\}(z): e_0} $$
 
-\frac{s(e) \texttt{ val}}{\texttt{rec}\{e_0; x.y.e_1\}(e) \rightarrow [e, \texttt{rec}\{e_0; x.y.e_1\}(e)/x,y]e_1}
-
-$$
+$$ \frac{s(e) \texttt{ val}}{\texttt{rec}\{e_0; x.y.e_1\}(e) \rightarrow [e, \texttt{rec}\{e_0; x.y.e_1\}(e)/x,y]e_1} $$
 
 These are known as the **transition** rules
 
