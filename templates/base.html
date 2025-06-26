@@ -9,6 +9,7 @@
         {%- block title %}{{ config.title }}{% endblock title %}
     </title>
     <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/color.css">
     <link rel="stylesheet" href="/base.css">
     <link rel="stylesheet" href="/js/katex.min.css">
     <script src="/js/katex.min.js"></script>
@@ -19,9 +20,16 @@
     <div class="container">
         
         <h1 style="text-align: center;">r/c/s</h1>
-
+        <nav id="navbar"><ul>
+            {% for item in config.extra.menu_items %}
+                <li><a class="wiktori" href={{item.url | replace(from='$BASE_URL', to=config.base_url) }}>{{item.name}}</a></li>
+            {% endfor %}
+            </ul>
+        </nav>
+        <main>
         {% block content %}
         {% endblock %}
+        </main>
     </div>
     <!-- This for KaTex to work -->
     <script>
@@ -39,7 +47,7 @@
     </script>
 
     <hr>
-    <p><small>Content &copy 2022-2025 r/c/s.</small></p>
+    <footer id="footer">Content &copy 2022-2025 r/c/s.</footer>
     <hr>
     <div class="eightyeightthirtyone">
          {%- for button in config.extra.88x31 -%}

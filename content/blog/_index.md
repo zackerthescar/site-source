@@ -9,4 +9,4 @@ paginate_by = 2
 
 +++
 
-Below are some ramblings from 
+Below are some ramblings from me:

@@ -7,15 +7,15 @@ AR='ar'
 export AR
 AS='as'
 export AS
-BASH='/nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37/bin/bash'
+BASH='/nix/store/00zrahbb32nzawrmv9sjxn36h7qk9vrs-bash-5.2p37/bin/bash'
 CC='gcc'
 export CC
-CONFIG_SHELL='/nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37/bin/bash'
+CONFIG_SHELL='/nix/store/00zrahbb32nzawrmv9sjxn36h7qk9vrs-bash-5.2p37/bin/bash'
 export CONFIG_SHELL
 CXX='g++'
 export CXX
 HOSTTYPE='x86_64'
-HOST_PATH='/nix/store/y35zj6m2w5s0c8y6i6mf6hqzdac0pwyq-zola-0.19.2/bin:/nix/store/wdap4cr3bnm685f27y9bb6q5b6q18msl-coreutils-9.5/bin:/nix/store/032xw8dchwjipwqh6b3h70yc3mcmsqld-findutils-4.10.0/bin:/nix/store/dd7xqz1qwl0di4zb8rzj7r1ds8np9xqs-diffutils-3.10/bin:/nix/store/bffnm1211li6y431irplzbjbccr0k884-gnused-4.9/bin:/nix/store/4lbfasv335vpk8rbcf3pgkag4rhg8jx8-gnugrep-3.11/bin:/nix/store/xpzl2sf58fqfpl64b1fy1ihxay7k71li-gawk-5.3.1/bin:/nix/store/zlmk040fc3jax9s3gldwp5rfwc1hhajc-gnutar-1.35/bin:/nix/store/chwdy9qaxd13q8zvl0zd5r7ql2q116di-gzip-1.13/bin:/nix/store/hpppxlcfvjzrvvcvhcm47divp65gbwq1-bzip2-1.0.8-bin/bin:/nix/store/y0akgyz13jgxwm968bs8kay47zbxx638-gnumake-4.4.1/bin:/nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37/bin:/nix/store/apqwjgbjj646wk2jkzr67l26djamn481-patch-2.7.6/bin:/nix/store/rrv4bd5i7rp2m7j8ix4kl8bzijhh8gd3-xz-5.6.3-bin/bin:/nix/store/qraqns84wjffzd8d3dgbdcyxg41czbd6-file-5.46/bin'
+HOST_PATH='/nix/store/jrj7h29mjy6zyz3zd3ifa4a1966q2ah4-zola-0.20.0/bin:/nix/store/psy9v2asypgl9ylg8cnzkixc7fv0snj0-coreutils-9.7/bin:/nix/store/c14zwgl8hf1wm0izij2i16xvk8ak70cy-findutils-4.10.0/bin:/nix/store/ibx4jfwlhjg4g0s6rrxrpaxa3ka8ns4m-diffutils-3.12/bin:/nix/store/pr318zsl44jdwpk9wk0sdrn19b6in7ah-gnused-4.9/bin:/nix/store/bc6zxzjnkjp4r9nhz5imy3cypvdh6r4n-gnugrep-3.12/bin:/nix/store/nv3y7zb1cwz1h9qy7nwz0s54j8dl1kqj-gawk-5.3.2/bin:/nix/store/lp82dcnrzljyix6yigwzrlpr1smvpmb0-gnutar-1.35/bin:/nix/store/6ag5dhk7sma61p6vl0kazfmpbrq08nqh-gzip-1.14/bin:/nix/store/ykdv4id6893gmkqwdmbimq237c1xqvq7-bzip2-1.0.8-bin/bin:/nix/store/6bwp1y45zlyvpr4ja2sk1yi9v5mrs94x-gnumake-4.4.1/bin:/nix/store/00zrahbb32nzawrmv9sjxn36h7qk9vrs-bash-5.2p37/bin:/nix/store/c9xmgszbf6i4dfq9r953khk9d7fdqigw-patch-2.8/bin:/nix/store/ikfwx7kbwz9zr7fziiac7f57jgbh3bnv-xz-5.8.1-bin/bin:/nix/store/3pdmbqy86wsbjdazxv1n3vrmj60vn0ri-file-5.45/bin'
 export HOST_PATH
 IFS=' 	
 '
@@ -25,21 +25,21 @@ LD='ld'
 export LD
 LINENO='76'
 MACHTYPE='x86_64-pc-linux-gnu'
-NIX_BINTOOLS='/nix/store/vrkxj51s4a1awh7m4p4f1w29wad5s20m-binutils-wrapper-2.43.1'
+NIX_BINTOOLS='/nix/store/cadx5p7c0i06gf6h84iw9mrhx56imbv0-binutils-wrapper-2.44'
 export NIX_BINTOOLS
 NIX_BINTOOLS_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
 export NIX_BINTOOLS_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu
 NIX_BUILD_CORES='16'
 export NIX_BUILD_CORES
-NIX_CC='/nix/store/4ijy8jbsiqmj37avrk83gn2m903486mr-gcc-wrapper-14-20241116'
+NIX_CC='/nix/store/pbqah1qk4b5y14fqinr1h8zvhqy71v81-gcc-wrapper-14.3.0'
 export NIX_CC
 NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
 export NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu
-NIX_CFLAGS_COMPILE=' -frandom-seed=w1s1rr40z6'
+NIX_CFLAGS_COMPILE=' -frandom-seed=m041q4j8dx'
 export NIX_CFLAGS_COMPILE
 NIX_ENFORCE_NO_NATIVE='1'
 export NIX_ENFORCE_NO_NATIVE
-NIX_HARDENING_ENABLE='bindnow format fortify fortify3 pic relro stackprotector strictoverflow zerocallusedregs'
+NIX_HARDENING_ENABLE='bindnow format fortify fortify3 pic relro stackclashprotection stackprotector strictoverflow zerocallusedregs'
 export NIX_HARDENING_ENABLE
 NIX_LDFLAGS='-rpath /home/zackerthescar/Projects/site-source/outputs/out/lib '
 export NIX_LDFLAGS
@@ -56,14 +56,14 @@ OLDPWD=''
 export OLDPWD
 OPTERR='1'
 OSTYPE='linux-gnu'
-PATH='/nix/store/f04zhapn8n8w6yrd35s8sd9qmjp8g9ry-patchelf-0.15.0/bin:/nix/store/4ijy8jbsiqmj37avrk83gn2m903486mr-gcc-wrapper-14-20241116/bin:/nix/store/zs2gq6fkglrd28g1nxlb8waqq37cdc2z-gcc-14-20241116/bin:/nix/store/9lcg6rsqbmx6s35jzy86b86pkj0qhxjl-glibc-2.40-66-bin/bin:/nix/store/wdap4cr3bnm685f27y9bb6q5b6q18msl-coreutils-9.5/bin:/nix/store/vrkxj51s4a1awh7m4p4f1w29wad5s20m-binutils-wrapper-2.43.1/bin:/nix/store/5h5ghy2qf6l91l52j6m5vx473zi38vc3-binutils-2.43.1/bin:/nix/store/y35zj6m2w5s0c8y6i6mf6hqzdac0pwyq-zola-0.19.2/bin:/nix/store/wdap4cr3bnm685f27y9bb6q5b6q18msl-coreutils-9.5/bin:/nix/store/032xw8dchwjipwqh6b3h70yc3mcmsqld-findutils-4.10.0/bin:/nix/store/dd7xqz1qwl0di4zb8rzj7r1ds8np9xqs-diffutils-3.10/bin:/nix/store/bffnm1211li6y431irplzbjbccr0k884-gnused-4.9/bin:/nix/store/4lbfasv335vpk8rbcf3pgkag4rhg8jx8-gnugrep-3.11/bin:/nix/store/xpzl2sf58fqfpl64b1fy1ihxay7k71li-gawk-5.3.1/bin:/nix/store/zlmk040fc3jax9s3gldwp5rfwc1hhajc-gnutar-1.35/bin:/nix/store/chwdy9qaxd13q8zvl0zd5r7ql2q116di-gzip-1.13/bin:/nix/store/hpppxlcfvjzrvvcvhcm47divp65gbwq1-bzip2-1.0.8-bin/bin:/nix/store/y0akgyz13jgxwm968bs8kay47zbxx638-gnumake-4.4.1/bin:/nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37/bin:/nix/store/apqwjgbjj646wk2jkzr67l26djamn481-patch-2.7.6/bin:/nix/store/rrv4bd5i7rp2m7j8ix4kl8bzijhh8gd3-xz-5.6.3-bin/bin:/nix/store/qraqns84wjffzd8d3dgbdcyxg41czbd6-file-5.46/bin'
+PATH='/nix/store/1c8sm86wj45vwkb3ww2b870h9i9wna6r-patchelf-0.15.0/bin:/nix/store/pbqah1qk4b5y14fqinr1h8zvhqy71v81-gcc-wrapper-14.3.0/bin:/nix/store/sa7j7cddyblhcb3ch3ds10w7nw75yjj1-gcc-14.3.0/bin:/nix/store/mdmsnfcvxyk5ynz7nx8nhss1wig0gljx-glibc-2.40-66-bin/bin:/nix/store/psy9v2asypgl9ylg8cnzkixc7fv0snj0-coreutils-9.7/bin:/nix/store/cadx5p7c0i06gf6h84iw9mrhx56imbv0-binutils-wrapper-2.44/bin:/nix/store/z3za8hfc24wb117s50p8b10agjkgm039-binutils-2.44/bin:/nix/store/jrj7h29mjy6zyz3zd3ifa4a1966q2ah4-zola-0.20.0/bin:/nix/store/psy9v2asypgl9ylg8cnzkixc7fv0snj0-coreutils-9.7/bin:/nix/store/c14zwgl8hf1wm0izij2i16xvk8ak70cy-findutils-4.10.0/bin:/nix/store/ibx4jfwlhjg4g0s6rrxrpaxa3ka8ns4m-diffutils-3.12/bin:/nix/store/pr318zsl44jdwpk9wk0sdrn19b6in7ah-gnused-4.9/bin:/nix/store/bc6zxzjnkjp4r9nhz5imy3cypvdh6r4n-gnugrep-3.12/bin:/nix/store/nv3y7zb1cwz1h9qy7nwz0s54j8dl1kqj-gawk-5.3.2/bin:/nix/store/lp82dcnrzljyix6yigwzrlpr1smvpmb0-gnutar-1.35/bin:/nix/store/6ag5dhk7sma61p6vl0kazfmpbrq08nqh-gzip-1.14/bin:/nix/store/ykdv4id6893gmkqwdmbimq237c1xqvq7-bzip2-1.0.8-bin/bin:/nix/store/6bwp1y45zlyvpr4ja2sk1yi9v5mrs94x-gnumake-4.4.1/bin:/nix/store/00zrahbb32nzawrmv9sjxn36h7qk9vrs-bash-5.2p37/bin:/nix/store/c9xmgszbf6i4dfq9r953khk9d7fdqigw-patch-2.8/bin:/nix/store/ikfwx7kbwz9zr7fziiac7f57jgbh3bnv-xz-5.8.1-bin/bin:/nix/store/3pdmbqy86wsbjdazxv1n3vrmj60vn0ri-file-5.45/bin'
 export PATH
 PS4='+ '
 RANLIB='ranlib'
 export RANLIB
 READELF='readelf'
 export READELF
-SHELL='/nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37/bin/bash'
+SHELL='/nix/store/00zrahbb32nzawrmv9sjxn36h7qk9vrs-bash-5.2p37/bin/bash'
 export SHELL
 SIZE='size'
 export SIZE
@@ -73,12 +73,12 @@ STRINGS='strings'
 export STRINGS
 STRIP='strip'
 export STRIP
-XDG_DATA_DIRS='/nix/store/f04zhapn8n8w6yrd35s8sd9qmjp8g9ry-patchelf-0.15.0/share'
+XDG_DATA_DIRS='/nix/store/1c8sm86wj45vwkb3ww2b870h9i9wna6r-patchelf-0.15.0/share'
 export XDG_DATA_DIRS
 __structuredAttrs=''
 export __structuredAttrs
 _substituteStream_has_warned_replace_deprecation='false'
-buildInputs='/nix/store/y35zj6m2w5s0c8y6i6mf6hqzdac0pwyq-zola-0.19.2'
+buildInputs='/nix/store/jrj7h29mjy6zyz3zd3ifa4a1966q2ah4-zola-0.20.0'
 export buildInputs
 buildPhase='{ echo "------------------------------------------------------------";
   echo " WARNING: the existence of this path is not guaranteed.";
@@ -90,14 +90,14 @@ buildPhase='{ echo "------------------------------------------------------------
 } >> "$out"
 '
 export buildPhase
-builder='/nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37/bin/bash'
+builder='/nix/store/00zrahbb32nzawrmv9sjxn36h7qk9vrs-bash-5.2p37/bin/bash'
 export builder
 cmakeFlags=''
 export cmakeFlags
 configureFlags=''
 export configureFlags
 defaultBuildInputs=''
-defaultNativeBuildInputs='/nix/store/f04zhapn8n8w6yrd35s8sd9qmjp8g9ry-patchelf-0.15.0 /nix/store/b9qv2l6dy15jy7pvarzjpn0yl33rdrbc-update-autotools-gnu-config-scripts-hook /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh /nix/store/shr47253n0j4c4lpvv6fmlvaq7vfvc3x-no-broken-symlinks.sh /nix/store/q84p4jvn5yalz937azdrfbyy32kl5s16-patch-shebangs.sh /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh /nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh /nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh /nix/store/4ijy8jbsiqmj37avrk83gn2m903486mr-gcc-wrapper-14-20241116'
+defaultNativeBuildInputs='/nix/store/1c8sm86wj45vwkb3ww2b870h9i9wna6r-patchelf-0.15.0 /nix/store/063qqmawmq7bg75b56mgynw9s3rbx2ww-update-autotools-gnu-config-scripts-hook /nix/store/jjhw2phnaip4kg0qjas3x3fsaifi8y0w-no-broken-symlinks.sh /nix/store/cwvwai4ni9hmzaqvnvf1i5pvjh1hj36c-audit-tmpdir.sh /nix/store/4bawv6x85435v6s624sfk5cdpg9gr6yq-compress-man-pages.sh /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh /nix/store/cmzya9irvxzlkh7lfy6i82gbp0saxqj3-multiple-outputs.sh /nix/store/cq0kx53m7qhq7dvk5s96fazjlqf1bg4j-parallel.sh /nix/store/hxv896faph0rqxjq2ycxpcrbnngc95sz-patch-shebangs.sh /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh /nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh /nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh /nix/store/pbqah1qk4b5y14fqinr1h8zvhqy71v81-gcc-wrapper-14.3.0'
 depsBuildBuild=''
 export depsBuildBuild
 depsBuildBuildPropagated=''
@@ -128,7 +128,7 @@ declare -a envHostTargetHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 
 declare -a envTargetTargetHooks=()
 declare -a fixupOutputHooks=('if [ -z "${dontPatchELF-}" ]; then patchELF "$prefix"; fi' 'if [[ -z "${noAuditTmpdir-}" && -e "$prefix" ]]; then auditTmpdir "$prefix"; fi' 'if [ -z "${dontGzipMan-}" ]; then compressManPages "$prefix"; fi' '_moveLib64' '_moveSbin' '_moveSystemdUserUnits' 'patchShebangsAuto' '_pruneLibtoolFiles' '_doStrip' )
 guess='16'
-initialPath='/nix/store/wdap4cr3bnm685f27y9bb6q5b6q18msl-coreutils-9.5 /nix/store/032xw8dchwjipwqh6b3h70yc3mcmsqld-findutils-4.10.0 /nix/store/dd7xqz1qwl0di4zb8rzj7r1ds8np9xqs-diffutils-3.10 /nix/store/bffnm1211li6y431irplzbjbccr0k884-gnused-4.9 /nix/store/4lbfasv335vpk8rbcf3pgkag4rhg8jx8-gnugrep-3.11 /nix/store/xpzl2sf58fqfpl64b1fy1ihxay7k71li-gawk-5.3.1 /nix/store/zlmk040fc3jax9s3gldwp5rfwc1hhajc-gnutar-1.35 /nix/store/chwdy9qaxd13q8zvl0zd5r7ql2q116di-gzip-1.13 /nix/store/hpppxlcfvjzrvvcvhcm47divp65gbwq1-bzip2-1.0.8-bin /nix/store/y0akgyz13jgxwm968bs8kay47zbxx638-gnumake-4.4.1 /nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37 /nix/store/apqwjgbjj646wk2jkzr67l26djamn481-patch-2.7.6 /nix/store/rrv4bd5i7rp2m7j8ix4kl8bzijhh8gd3-xz-5.6.3-bin /nix/store/qraqns84wjffzd8d3dgbdcyxg41czbd6-file-5.46'
+initialPath='/nix/store/psy9v2asypgl9ylg8cnzkixc7fv0snj0-coreutils-9.7 /nix/store/c14zwgl8hf1wm0izij2i16xvk8ak70cy-findutils-4.10.0 /nix/store/ibx4jfwlhjg4g0s6rrxrpaxa3ka8ns4m-diffutils-3.12 /nix/store/pr318zsl44jdwpk9wk0sdrn19b6in7ah-gnused-4.9 /nix/store/bc6zxzjnkjp4r9nhz5imy3cypvdh6r4n-gnugrep-3.12 /nix/store/nv3y7zb1cwz1h9qy7nwz0s54j8dl1kqj-gawk-5.3.2 /nix/store/lp82dcnrzljyix6yigwzrlpr1smvpmb0-gnutar-1.35 /nix/store/6ag5dhk7sma61p6vl0kazfmpbrq08nqh-gzip-1.14 /nix/store/ykdv4id6893gmkqwdmbimq237c1xqvq7-bzip2-1.0.8-bin /nix/store/6bwp1y45zlyvpr4ja2sk1yi9v5mrs94x-gnumake-4.4.1 /nix/store/00zrahbb32nzawrmv9sjxn36h7qk9vrs-bash-5.2p37 /nix/store/c9xmgszbf6i4dfq9r953khk9d7fdqigw-patch-2.8 /nix/store/ikfwx7kbwz9zr7fziiac7f57jgbh3bnv-xz-5.8.1-bin /nix/store/3pdmbqy86wsbjdazxv1n3vrmj60vn0ri-file-5.45'
 mesonFlags=''
 export mesonFlags
 name='nix-shell-env'
@@ -152,14 +152,14 @@ patches=''
 export patches
 phases='buildPhase'
 export phases
-pkg='/nix/store/4ijy8jbsiqmj37avrk83gn2m903486mr-gcc-wrapper-14-20241116'
+pkg='/nix/store/pbqah1qk4b5y14fqinr1h8zvhqy71v81-gcc-wrapper-14.3.0'
 declare -a pkgsBuildBuild=()
-declare -a pkgsBuildHost=('/nix/store/f04zhapn8n8w6yrd35s8sd9qmjp8g9ry-patchelf-0.15.0' '/nix/store/b9qv2l6dy15jy7pvarzjpn0yl33rdrbc-update-autotools-gnu-config-scripts-hook' '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh' '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh' '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh' '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh' '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh' '/nix/store/shr47253n0j4c4lpvv6fmlvaq7vfvc3x-no-broken-symlinks.sh' '/nix/store/q84p4jvn5yalz937azdrfbyy32kl5s16-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh' '/nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh' '/nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh' '/nix/store/4ijy8jbsiqmj37avrk83gn2m903486mr-gcc-wrapper-14-20241116' '/nix/store/vrkxj51s4a1awh7m4p4f1w29wad5s20m-binutils-wrapper-2.43.1' )
+declare -a pkgsBuildHost=('/nix/store/1c8sm86wj45vwkb3ww2b870h9i9wna6r-patchelf-0.15.0' '/nix/store/063qqmawmq7bg75b56mgynw9s3rbx2ww-update-autotools-gnu-config-scripts-hook' '/nix/store/jjhw2phnaip4kg0qjas3x3fsaifi8y0w-no-broken-symlinks.sh' '/nix/store/cwvwai4ni9hmzaqvnvf1i5pvjh1hj36c-audit-tmpdir.sh' '/nix/store/4bawv6x85435v6s624sfk5cdpg9gr6yq-compress-man-pages.sh' '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh' '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh' '/nix/store/cmzya9irvxzlkh7lfy6i82gbp0saxqj3-multiple-outputs.sh' '/nix/store/cq0kx53m7qhq7dvk5s96fazjlqf1bg4j-parallel.sh' '/nix/store/hxv896faph0rqxjq2ycxpcrbnngc95sz-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh' '/nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh' '/nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh' '/nix/store/pbqah1qk4b5y14fqinr1h8zvhqy71v81-gcc-wrapper-14.3.0' '/nix/store/cadx5p7c0i06gf6h84iw9mrhx56imbv0-binutils-wrapper-2.44' )
 declare -a pkgsBuildTarget=()
 declare -a pkgsHostHost=()
-declare -a pkgsHostTarget=('/nix/store/y35zj6m2w5s0c8y6i6mf6hqzdac0pwyq-zola-0.19.2' )
+declare -a pkgsHostTarget=('/nix/store/jrj7h29mjy6zyz3zd3ifa4a1966q2ah4-zola-0.20.0' )
 declare -a pkgsTargetTarget=()
-declare -a postFixupHooks=('_makeSymlinksRelativeInAllOutputs' '_multioutPropagateDev' 'noBrokenSymlinksInAllOutputs' )
+declare -a postFixupHooks=('noBrokenSymlinksInAllOutputs' '_makeSymlinksRelativeInAllOutputs' '_multioutPropagateDev' )
 declare -a postUnpackHooks=('_updateSourceDateEpochFromSourceRoot' )
 declare -a preConfigureHooks=('_multioutConfig' )
 preConfigurePhases=' updateAutotoolsGnuConfigScriptsPhase'
@@ -174,11 +174,11 @@ declare -a propagatedHostDepFiles=('propagated-host-host-deps' 'propagated-build
 propagatedNativeBuildInputs=''
 export propagatedNativeBuildInputs
 declare -a propagatedTargetDepFiles=('propagated-target-target-deps' )
-shell='/nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37/bin/bash'
+shell='/nix/store/00zrahbb32nzawrmv9sjxn36h7qk9vrs-bash-5.2p37/bin/bash'
 export shell
 shellHook=''
 export shellHook
-stdenv='/nix/store/dh9szsq14j2w2dx7pn219n27gwq7w3dn-stdenv-linux'
+stdenv='/nix/store/nlqc1vm5psq2jjr5df6z25gkxkfqbvxx-stdenv-linux'
 export stdenv
 strictDeps=''
 export strictDeps
@@ -317,7 +317,7 @@ _defaultUnpack ()
             echo "Did you specify two \"srcs\" with the same \"name\"?";
             return 1;
         fi;
-        cp -r --preserve=mode,timestamps --reflink=auto -- "$fn" "$destination";
+        cp -r --preserve=timestamps --reflink=auto -- "$fn" "$destination";
     else
         case "$fn" in 
             *.tar.xz | *.tar.lzma | *.txz)
@@ -536,7 +536,7 @@ _multioutConfig ()
             shareDocName="$(echo "$name" | sed 's/-[^a-zA-Z].*//')";
         fi;
     fi;
-    prependToVar configureFlags --bindir="${!outputBin}"/bin --sbindir="${!outputBin}"/sbin --includedir="${!outputInclude}"/include --oldincludedir="${!outputInclude}"/include --mandir="${!outputMan}"/share/man --infodir="${!outputInfo}"/share/info --docdir="${!outputDoc}"/share/doc/"${shareDocName}" --libdir="${!outputLib}"/lib --libexecdir="${!outputLib}"/libexec --localedir="${!outputLib}"/share/locale;
+    prependToVar configureFlags --bindir="${!outputBin}"/bin --sbindir="${!outputBin}"/sbin --includedir="${!outputInclude}"/include --mandir="${!outputMan}"/share/man --infodir="${!outputInfo}"/share/info --docdir="${!outputDoc}"/share/doc/"${shareDocName}" --libdir="${!outputLib}"/lib --libexecdir="${!outputLib}"/libexec --localedir="${!outputLib}"/share/locale;
     prependToVar installFlags pkgconfigdir="${!outputDev}"/lib/pkgconfig m4datadir="${!outputDev}"/share/aclocal aclocaldir="${!outputDev}"/share/aclocal
 }
 _multioutDevs ()
@@ -749,29 +749,32 @@ auditTmpdir ()
     local dir="$1";
     [ -e "$dir" ] || return 0;
     echo "checking for references to $TMPDIR/ in $dir...";
-    local i;
-    find "$dir" -type f -print0 | while IFS= read -r -d '' i; do
-        if [[ "$i" =~ .build-id ]]; then
-            continue;
-        fi;
-        if isELF "$i"; then
+    function _processFile () 
+    { 
+        local file="$1";
+        if isELF "$file"; then
             if { 
                 printf :;
-                patchelf --print-rpath "$i"
+                patchelf --print-rpath "$file"
             } | grep -q -F ":$TMPDIR/"; then
-                echo "RPATH of binary $i contains a forbidden reference to $TMPDIR/";
+                echo "RPATH of binary $file contains a forbidden reference to $TMPDIR/";
                 exit 1;
             fi;
-        fi;
-        if isScript "$i"; then
-            if [ -e "$(dirname "$i")/.$(basename "$i")-wrapped" ]; then
-                if grep -q -F "$TMPDIR/" "$i"; then
-                    echo "wrapper script $i contains a forbidden reference to $TMPDIR/";
-                    exit 1;
+        else
+            if isScript "$file"; then
+                filename=${i##*/};
+                dir=${i%/*};
+                if [ -e "$dir/.$filename-wrapped" ]; then
+                    if grep -q -F "$TMPDIR/" "$file"; then
+                        echo "wrapper script $file contains a forbidden reference to $TMPDIR/";
+                        exit 1;
+                    fi;
                 fi;
             fi;
-        fi;
-    done
+        fi
+    };
+    find "$dir" -type f -not -path '*/.build-id/*' -print0 | parallelMap _processFile;
+    unset -f _processFile
 }
 bintoolsWrapper_addLDVars ()
 {
@@ -853,13 +856,7 @@ compressManPages ()
         return;
     fi;
     echo "gzipping man pages under $dir/share/man/";
-    find "$dir"/share/man/ -type f -a '!' -regex '.*\.\(bz2\|gz\|xz\)$' -print0 | while IFS= read -r -d '' f; do
-        if gzip -c -n "$f" > "$f".gz; then
-            rm "$f";
-        else
-            rm "$f".gz;
-        fi;
-    done;
+    find "$dir"/share/man/ -type f -a '!' -regex '.*\.\(bz2\|gz\|xz\)$' -print0 | xargs -0 -n1 -P "$NIX_BUILD_CORES" gzip -f;
     find "$dir"/share/man/ -type l -a '!' -regex '.*\.\(bz2\|gz\|xz\)$' -print0 | sort -z | while IFS= read -r -d '' f; do
         local target;
         target="$(readlink -f "$f")";
@@ -1149,9 +1146,9 @@ fixupPhase ()
         done;
         unset -v hook;
     fi;
-    if [ -n "${propagatedUserEnvPkgs:-}" ]; then
+    if [ -n "${propagatedUserEnvPkgs[*]:-}" ]; then
         mkdir -p "${!outputBin}/nix-support";
-        printWords $propagatedUserEnvPkgs > "${!outputBin}/nix-support/propagated-user-env-packages";
+        printWords "${propagatedUserEnvPkgs[@]}" > "${!outputBin}/nix-support/propagated-user-env-packages";
     fi;
     runHook postFixup
 }
@@ -1208,7 +1205,7 @@ getRole ()
             role_post='_FOR_TARGET'
         ;;
         *)
-            echo "binutils-wrapper-2.43.1: used as improper sort of dependency" 1>&2;
+            echo "binutils-wrapper-2.44: used as improper sort of dependency" 1>&2;
             return 1
         ;;
     esac
@@ -1237,7 +1234,7 @@ getTargetRoleWrapper ()
             export NIX_BINTOOLS_WRAPPER_TARGET_TARGET_x86_64_unknown_linux_gnu=1
         ;;
         *)
-            echo "binutils-wrapper-2.43.1: used as improper sort of dependency" 1>&2;
+            echo "binutils-wrapper-2.44: used as improper sort of dependency" 1>&2;
             return 1
         ;;
     esac
@@ -1447,6 +1444,7 @@ noBrokenSymlinks ()
     local symlinkTarget;
     local -i numDanglingSymlinks=0;
     local -i numReflexiveSymlinks=0;
+    local -i numUnreadableSymlinks=0;
     if [[ ! -e $output ]]; then
         nixWarnLog "skipping non-existent output $output";
         return 0;
@@ -1454,7 +1452,11 @@ noBrokenSymlinks ()
     nixInfoLog "running on $output";
     while IFS= read -r -d '' path; do
         pathParent="$(dirname "$path")";
-        symlinkTarget="$(readlink "$path")";
+        if ! symlinkTarget="$(readlink "$path")"; then
+            nixErrorLog "the symlink $path is unreadable";
+            numUnreadableSymlinks+=1;
+            continue;
+        fi;
         if [[ $symlinkTarget == /* ]]; then
             nixInfoLog "symlink $path points to absolute target $symlinkTarget";
         else
@@ -1466,19 +1468,19 @@ noBrokenSymlinks ()
             continue;
         fi;
         if [[ $path == "$symlinkTarget" ]]; then
-            nixErrorLog "the symlink $path is reflexive $symlinkTarget";
+            nixErrorLog "the symlink $path is reflexive";
             numReflexiveSymlinks+=1;
         else
             if [[ ! -e $symlinkTarget ]]; then
-                nixErrorLog "the symlink $path points to a missing target $symlinkTarget";
+                nixErrorLog "the symlink $path points to a missing target: $symlinkTarget";
                 numDanglingSymlinks+=1;
             else
                 nixDebugLog "the symlink $path is irreflexive and points to a target which exists";
             fi;
         fi;
     done < <(find "$output" -type l -print0);
-    if ((numDanglingSymlinks > 0 || numReflexiveSymlinks > 0)); then
-        nixErrorLog "found $numDanglingSymlinks dangling symlinks and $numReflexiveSymlinks reflexive symlinks";
+    if ((numDanglingSymlinks > 0 || numReflexiveSymlinks > 0 || numUnreadableSymlinks > 0)); then
+        nixErrorLog "found $numDanglingSymlinks dangling symlinks, $numReflexiveSymlinks reflexive symlinks and $numUnreadableSymlinks unreadable symlinks";
         exit 1;
     fi;
     return 0
@@ -1492,6 +1494,53 @@ noBrokenSymlinksInAllOutputs ()
             noBrokenSymlinks "${!output}";
         done;
     fi
+}
+parallelMap ()
+{
+ 
+    function _wrapper () 
+    { 
+        while IFS= read -r -d '' job; do
+            "$@" "$job";
+        done
+    };
+    parallelRun _wrapper "$@";
+    unset -f _wrapper
+}
+parallelRun ()
+{
+ 
+    local pids;
+    local lock;
+    pids=();
+    lock=$(mktemp -u);
+    mkfifo "$lock";
+    for ((i=0; i<NIX_BUILD_CORES; i++))
+    do
+        { 
+            exec 3< "$lock";
+            exec 4> "$lock";
+            local job;
+            while :; do
+                read -r -n1 > /dev/null 0<&3;
+                if ! IFS= read -r -d '' job; then
+                    printf 'x' 1>&4;
+                    break;
+                fi;
+                printf 'y' 1>&4;
+                printf '%s\0' "$job";
+            done | "$@"
+        } & pids[$i]=$!;
+    done;
+    printf 'a' > "$lock" & for pid in "${pids[@]}";
+    do
+        if ! wait "$pid"; then
+            echo "A parallel job failed with exit code $? (check for errors above)" 1>&2;
+            echo -e "Failing Command:\n  $@" 1>&2;
+            exit 1;
+        fi;
+    done;
+    rm "$lock"
 }
 patchELF ()
 {
@@ -1600,7 +1649,7 @@ patchShebangs ()
         if [[ "$oldPath" == *"/bin/env" ]]; then
             if [[ $arg0 == "-S" ]]; then
                 arg0=${args%% *};
-                args=${args#* };
+                [[ "$args" == *" "* ]] && args=${args#* } || args=;
                 newPath="$(PATH="${!pathName}" type -P "env" || true)";
                 args="-S $(PATH="${!pathName}" type -P "$arg0" || true) $args";
             else
@@ -1933,21 +1982,17 @@ substituteStream ()
                 pattern="$2";
                 replacement="$3";
                 shift 3;
-                local savedvar;
-                savedvar="${!var}";
-                eval "$var"'=${'"$var"'//"$pattern"/"$replacement"}';
-                if [ "$pattern" != "$replacement" ]; then
-                    if [ "${!var}" == "$savedvar" ]; then
-                        if [ "$replace_mode" == --replace-warn ]; then
-                            printf "substituteStream() in derivation $name: WARNING: pattern %q doesn't match anything in %s\n" "$pattern" "$description" 1>&2;
-                        else
-                            if [ "$replace_mode" == --replace-fail ]; then
-                                printf "substituteStream() in derivation $name: ERROR: pattern %q doesn't match anything in %s\n" "$pattern" "$description" 1>&2;
-                                return 1;
-                            fi;
+                if ! [[ "${!var}" == *"$pattern"* ]]; then
+                    if [ "$replace_mode" == --replace-warn ]; then
+                        printf "substituteStream() in derivation $name: WARNING: pattern %q doesn't match anything in %s\n" "$pattern" "$description" 1>&2;
+                    else
+                        if [ "$replace_mode" == --replace-fail ]; then
+                            printf "substituteStream() in derivation $name: ERROR: pattern %q doesn't match anything in %s\n" "$pattern" "$description" 1>&2;
+                            return 1;
                         fi;
                     fi;
-                fi
+                fi;
+                eval "$var"'=${'"$var"'//"$pattern"/"$replacement"}'
             ;;
             --subst-var)
                 local varName="$2";
@@ -2057,7 +2102,7 @@ updateAutotoolsGnuConfigScriptsPhase ()
         for f in $(find . -type f -name "$script");
         do
             echo "Updating Autotools / GNU config script to a newer upstream version: $f";
-            cp -f "/nix/store/3g69kgyhn438bxli7nf202xz6sc3sln9-gnu-config-2024-01-01/$script" "$f";
+            cp -f "/nix/store/s3dj57ywp7j6az9xbc3yssjlwnlw335q-gnu-config-2024-01-01/$script" "$f";
         done;
     done
 }

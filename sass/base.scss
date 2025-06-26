@@ -1,23 +1,102 @@
-// This bit from autumns.page
+:root {
+    --body-bg-image: url('/img/background.png');
+    --body-bg-size: 64px;
+
+    /* colors */
+    --accent-1: #113;
+    --headers: #f6f;
+    --border: #96f;
+    --links: #a7d;
+    --sidebar: #214;
+    --main-color: #426;
+    --text-color: #fef;
+    --background-color: #000;
+    
+    --margin: 5px;
+    scrollbar-color: var(--main-color) var(--accent-1);
+}
+
 html {
+    background-image: var(--body-bg-image);
+    color: var(--text-color);
     font-family: 'Source Serif 4', 'Noto Serif', 'Times New Roman', Times, 'serif';
-    color: var(--fg);
-    background-color: var(--bg-2);
     min-height: 100vh;
 }
 
 // This bit from bettermotherfuckingwebsite.com
 body {
-    margin:40px auto;
+    margin:  var(--margin) auto;
     max-width:720px;
     line-height:1.6;
     font-size:18px;
-    color:#444;
+    // background-color: var(--background-color);
     padding:010px
 }
 
-h1,h2,h3{
-    line-height:1.2
+h1,h2,h3, .caption {
+    line-height:1.2;
+    color: var(--headers);
+}
+
+a {
+    color: var(--links);
+}
+
+.date, .no-colors .date {
+    float: right;
+    color: var(--links);
+    font-size: 16px;
+}
+
+main {
+    background-color: var(--main-color);
+    flex: 1;
+    padding: 20px;
+    margin: var(--margin);
+}
+#main {
+    flex: 1;
+}
+
+/* navigation section!! */
+#navbar {
+    min-height: 40px;
+    background-color: var(--accent-1);
+    /* navbar color */
+    width: 100%;
+    margin: var(--margin) 0;
+    
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+}
+
+/* navigation links*/
+#navbar li a {
+    /* navbar text color */
+    font-weight: 800;
+    text-decoration: none;
+    /* this removes the underline */
+}
+
+footer {
+    background-color: var(--accent-1);
+    /* background color for footer */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    /* this centers the footer text */
+    margin: var(--margin) 0;
 }
 
 .eightyeightthirtyone {
