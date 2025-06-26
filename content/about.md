@@ -37,6 +37,8 @@ personnel there are extremely friendly and approchable.
 Outside of CS, I'm a huge audio nerd! I was the Studio Engineer at 
 [Radio K](https://radiok.org), and hosted Circuit Board, the VGM show.
 
+I am a [copyright abolitionist](/copyright-abolition). It's not a widely
+known belief. It's probably my strongest opinion about how the world is run.
 
 Thanks for checking this part of my site out
 
