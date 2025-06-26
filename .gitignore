@@ -1,3 +1,4 @@
 public/
 *.swp
 flake.lock
+.direnv
