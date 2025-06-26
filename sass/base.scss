@@ -278,6 +278,8 @@ aside {
       padding: 12px;
       font-size: smaller;
       margin: auto;
+      position: sticky;
+      top: 5px;
 }
 .scroll #sidebar-inner-left, .scroll #sidebar-inner-right {
       position: sticky;
@@ -501,4 +503,5 @@ feel free to play around with the order!
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    image-rendering: pixelated;
 }

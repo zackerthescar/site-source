@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="preload" href="/fonts/Source_Serif_4-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Noto_Serif-latin.woff2" as="font" type="font/woff2" crossorigin>
     <title>
         {%- block title %}{{ config.title }}{% endblock title %}
     </title>
@@ -14,13 +12,6 @@
     <link rel="stylesheet" href="/js/katex.min.css">
     <script src="/js/katex.min.js"></script>
     <script src="/js/auto-render.min.js"></script>
-    <script>
-    var addSidebar = `
-        <div class="box" style="text-align:center; margin-bottom:10px;">
-            <h3 style="margin:0;">Now reading:</h3>
-            <p style="margin-bottom:0;" id="curr-book"></p>
-        </div>`;
-    </script>
 </head>
 
 <body>
@@ -44,7 +35,7 @@
                     {% set blog_section = get_section(path="blog/_index.md") %}
                     {% if blog_section %}
                     <div class="box" style="text-align: center; margin-bottom: 10px;">
-                        <h3>Recent posts</h3>
+                        <h3 style="margin: 10px;">Recent posts</h3>
                         <ul class="recent-posts">
                         {% for post in blog_section.pages | slice(end=3) %}
                             <li>
@@ -63,9 +54,15 @@
             </main>
             <aside id="rightSidebar">
                 <div id="sidebar-inner-right">
+                    {% if config.extra.listening_to %}
                     <div class="box" style="text-align: center; margin-bottom: 10px;">
-                        <p>go off</p>
+                        <h3 style="margin: 10px;">Listening to: </h3>
+                        <a href={{config.extra.listening_to.link}}>
+                            <img src={{config.extra.listening_to.img}} width="100%">
+                        </a>
+                        <p><small>{{config.extra.listening_to.artist}} - {{config.extra.listening_to.release}}</small></p>
                     </div>
+                    {% endif %}
                 </div>
             </aside>
         </div>
@@ -85,7 +82,7 @@
       );
     </script>
     <hr>
-    <footer id="footer">Content &copy 2022-2025 r/c/s.</footer>
+    <footer id="footer">Content &copy 2022-2025 r/c/s | CSS mostly from <a href="https://lerariemann.nekoweb.org/">Leia Riemann</a></footer>
     <hr>
     <div class="eightyeightthirtyone">
          {%- for button in config.extra.88x31 -%}

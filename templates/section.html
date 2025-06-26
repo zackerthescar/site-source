@@ -7,17 +7,16 @@
 {{section.content | safe}}
 
 <div class="posts">
-{% for page in paginator.pages %}
-    <article class="post">
-        {{ page.title }}
-        <div class="post_summary">
-            {{ page.summary | safe}}
-        </div>
-        <div class="read-more">
-            <a href="{{ page.permalink }}">Read more...</a>
-        </div>
-    </article>
-{% endfor %}
+    <ul>
+        {% for post in section.pages %}
+        <li>
+            <h3>
+                {% if post.date %} {{ post.date | date(format="%m/%d/%Y") }} - {% endif %}
+                <a href={{ post.permalink }}>{{ post.title }}</a>
+            </h3>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 
 
