@@ -24,14 +24,13 @@ the type system) is something that I've gained a lot more appreciation
 for while reading this textbook, so it's a pretty good read for systems
 programmers getting into the type safety hype. (i.e me!)
 
-The version on this website does not reflect the final version - most notably
-MathJax does not render newlines cleanly like KaTeX on VSCode, so a final,
-LaTeX typeset PDF will be provided.
+The chapters below represent a historical artefact of the final output
+for the class. I will eventually re-typeset it in Markdown, but my
+commentary in it's final form can be found [here](/docs/pfpl_commentary.pdf)
 
 - [Chapters 1-3](/csci8980-s25/chap1-3)
 - [Chapters 4-6 and 9](/csci8980-s25/chap4-6)
 - [Chapters 10-11](/csci8980-s25/chap10-11)
-- Chapters 12-13 pending further reading...
 - [Chapters 14-15](/csci8980-s25/chap14-15)
 
 

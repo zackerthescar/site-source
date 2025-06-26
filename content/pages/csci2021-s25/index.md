@@ -5,6 +5,10 @@ path = "csci2021-s25"
 
 # Info
 
+NOTE: The Spring 2025 semester at the University of Minnesota has ended,
+and so has my teaching assistantship. This page will remain up for 
+historical purposes.
+
 For Spring 2025, I will be a graduate TA for all three CSCI 2021 
 Machine Architecture courses. This subsection of my website will 
 be dedicated to info for students in any of the CSCI 2021 
