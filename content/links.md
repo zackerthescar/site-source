@@ -6,8 +6,8 @@ path = "links"
 # "The oomfs"
 
 These people do great stuff:
+- [bigaouette.com](https://bigaouette.com/)
 - [anne.cx](https://anne.cx)
-- [mikufan.page](https://mikufan.page)
 - [keltono.net](https://keltono.net)
 - [heen.dev](https://heen.dev)
 - [autumns.page](https://autumns.page)
@@ -34,4 +34,6 @@ will thus also find extremely cool):
 [Digital Show and Tell](https://www.youtube.com/watch?v=UqiBJbREUgU)
 
 - [WinWorldPC](https://winworldpc.com/home)
+
+- [macintoshgarden.org](https://macintoshgarden.org)
 

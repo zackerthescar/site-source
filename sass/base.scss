@@ -1,0 +1,29 @@
+// This bit from autumns.page
+html {
+    font-family: 'Source Serif 4', 'Noto Serif', 'Times New Roman', Times, 'serif';
+    color: var(--fg);
+    background-color: var(--bg-2);
+    min-height: 100vh;
+}
+
+// This bit from bettermotherfuckingwebsite.com
+body {
+    margin:40px auto;
+    max-width:720px;
+    line-height:1.6;
+    font-size:18px;
+    color:#444;
+    padding:010px
+}
+
+h1,h2,h3{
+    line-height:1.2
+}
+
+.eightyeightthirtyone {
+    justify-content: center;
+    flex-grow: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}

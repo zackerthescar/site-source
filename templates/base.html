@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="prefetch" href="/fonts/Source_Serif_4-latin.woff2">
+    <link rel="prefetch" href="/fonts/Crimson_Pro-latin.woff2">
+    <title>
+        {%- block title %}{{ config.title }}{% endblock title %}
+    </title>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/js/katex.min.css">
+    <script src="/js/katex.min.js"></script>
+    <script src="/js/auto-render.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1 style="text-align: center;">r/c/s</h1>
+
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!-- This for KaTex to work -->
+    <script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\(", right: "\\)", display: false}
+              ]
+          }
+      );
+    </script>
+
+    <hr>
+    <p><small>Content &copy 2022-2025 r/c/s.</small></p>
+    <hr>
+    <div class="eightyeightthirtyone">
+         {%- for button in config.extra.88x31 -%}
+         <a href="{{button.url}}">
+            <img alt={{ button.name }} title={{ button.name }} src="{{config.base_url}}/88x31/{{ button.img }}" width=88px height=31px />
+         </a>
+         {%- endfor -%}
+    </div>
+
+</body>
+
+</html>
