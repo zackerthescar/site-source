@@ -2,7 +2,6 @@
 # number of pages to paginate by
 paginate_by = 0
 render = true
-title = "r/c/s"
 +++
 
 ## Hiii!

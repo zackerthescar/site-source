@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="prefetch" href="/fonts/Source_Serif_4-latin.woff2">
-    <link rel="prefetch" href="/fonts/Crimson_Pro-latin.woff2">
+    <link rel="preload" href="/fonts/Source_Serif_4-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Noto_Serif-latin.woff2" as="font" type="font/woff2" crossorigin>
     <title>
         {%- block title %}{{ config.title }}{% endblock title %}
     </title>
@@ -14,22 +14,60 @@
     <link rel="stylesheet" href="/js/katex.min.css">
     <script src="/js/katex.min.js"></script>
     <script src="/js/auto-render.min.js"></script>
+    <script>
+    var addSidebar = `
+        <div class="box" style="text-align:center; margin-bottom:10px;">
+            <h3 style="margin:0;">Now reading:</h3>
+            <p style="margin-bottom:0;" id="curr-book"></p>
+        </div>`;
+    </script>
 </head>
 
 <body>
     <div class="container">
-        
-        <h1 style="text-align: center;">r/c/s</h1>
-        <nav id="navbar"><ul>
-            {% for item in config.extra.menu_items %}
-                <li><a class="wiktori" href={{item.url | replace(from='$BASE_URL', to=config.base_url) }}>{{item.name}}</a></li>
-            {% endfor %}
-            </ul>
-        </nav>
-        <main>
-        {% block content %}
-        {% endblock %}
-        </main>
+        <div id="headerArea">
+            <h1 style="text-align: center;">r/c/s</h1>
+            <nav id="navbar"><ul>
+                {% for item in config.extra.menu_items %}
+                    <li><a class="wiktori" href={{item.url | replace(from='$BASE_URL', to=config.base_url) }}>{{item.name}}</a></li>
+                {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div id="flex">
+            <aside id="leftSidebar">
+                <div id="sidebar-inner-left">
+                    <div class="box" style="text-align: center; margin-bottom: 10px;">
+                        <img src="/img/wikipe-tan.png" width="100%">
+                        <p>me</p>
+                    </div>
+                    <div class="box" style="text-align: center; margin-bottom: 10px;">
+                        {% set blog_section = get_section(path="blog/_index.md") %}
+                        {% if blog_section %}
+                            <ul class="recent-posts">
+                            {% for post in blog_section.pages | slice(end=3) %}
+                                <li>
+                                <a href="{{ post.permalink }}">{{ post.title }}</a>
+                                <small>{{ post.date | date(format="%B %d, %Y") }}</small>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </aside>
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
+            <aside id="rightSidebar">
+                <div id="sidebar-inner-right">
+                    <div class="box" style="text-align: center; margin-bottom: 10px;">
+                        <p>go off</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </div>
     <!-- This for KaTex to work -->
     <script>
@@ -45,7 +83,6 @@
           }
       );
     </script>
-
     <hr>
     <footer id="footer">Content &copy 2022-2025 r/c/s.</footer>
     <hr>

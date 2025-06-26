@@ -1,4 +1,16 @@
+/* CSS mainly from https://lerariemann.nekoweb.org/, thanks Lera! */
+/* user styles */
+
+/* styles are what change the color and sizes of stuff on your site. */
+
+/* these are variables that are being used in the code
+these tended to confuse some people, so I only kept 
+the images as variables */
+
+
+/* page themes */
 :root {
+    --header-image: url('/img/header.png');
     --body-bg-image: url('/img/background.png');
     --body-bg-size: 64px;
 
@@ -15,47 +27,168 @@
     --margin: 5px;
     scrollbar-color: var(--main-color) var(--accent-1);
 }
+.magenta {
+    --body-bg-image: url('/img/background-lines.png');
+    --body-bg-size: 384px;
+    --accent-1: #213;
+    --headers: #f6b;
+    --border: #c6f;
+    --links: #d7d;
+    --sidebar: #314;
+    --main-color: #626;
+}
+.noir {
+    --header-image: url('/img/headernoir.png');
+    --body-bg-image: none;
+    --body-bg-size: 1px;
+    --accent-1: #111;
+    --headers: #c44;
+    --border: #333;
+    --links: #a44;
+    --sidebar: #111;
+    --main-color: #222;
+}
+.noir aside img, .noir main img {
+    filter: sepia() hue-rotate(-45deg);
+}
 
-html {
-    background-image: var(--body-bg-image);
+/* character colors! */
+.caithe {
+  color: #e44;
+}
+.tayne {
+  color: #b7d;
+}
+.naia {
+  color: #0bb;
+}
+.komi {
+  color: #7e1;
+}
+.lana {
+  color: #f80;
+}
+.yasimir {
+  color: #79e;
+}
+.wiktori {
+  color: #f50;
+}
+.mara {
+  color: #ccc;
+}
+.watchdog {
+  color: #c83;
+}
+.garbage {
+  color: #a98;
+}
+.emperor {
+  color: #888;
+}
+/* elements: #c00, #f50, #0c3, #08f, #60c */
+
+.no-colors span {
     color: var(--text-color);
-    font-family: 'Source Serif 4', 'Noto Serif', 'Times New Roman', Times, 'serif';
-    min-height: 100vh;
 }
 
-// This bit from bettermotherfuckingwebsite.com
+/*how dates are displayed*/
+.date, .no-colors .date {
+  float: right;
+  font-style: italic;
+  font-family: 'Source Serif 4', 'Noto Serif', sans-serif;
+  color: var(--links);
+  font-size: 16px;
+}
+
 body {
-    margin:  var(--margin) auto;
-    max-width:720px;
-    line-height:1.6;
-    font-size:18px;
-    // background-color: var(--background-color);
-    padding:010px
+    font-family: 'Source Serif 4', 'Noto Serif', sans-serif;
+    font-size: 16px;
+    margin: 40px auto;
+    max-width: 1024px;
+    background-color: var(--background-color);
+    /* you can delete the line below if you'd prefer to not use an image */
+    background-size: var(--body-bg-size);
+    color: var(--text-color);
+    background-image: var(--body-bg-image);
+    background-attachment: fixed;
 }
 
-h1,h2,h3, .caption {
-    line-height:1.2;
-    color: var(--headers);
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* below this line is CSS for the layout */
+
+/* this is a CSS comment
+to uncomment a line of CSS, remove the * and the /
+before and after the text */
+
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
 }
 
 a {
     color: var(--links);
 }
 
-.date, .no-colors .date {
-    float: right;
-    color: var(--links);
-    font-size: 16px;
+/* the area below is for all links on your page
+EXCEPT for the navigation */
+#container a {
+    font-weight: bold;
+    text-decoration:none;
+    /* if you want to remove the underline
+you can add a line below here that says:
+text-decoration:none; */
 }
 
-main {
-    background-color: var(--main-color);
-    flex: 1;
-    padding: 20px;
-    margin: var(--margin);
+/* when a link is hovered over */
+#container a:hover {
+    text-decoration: underline;
 }
-#main {
-    flex: 1;
+
+#header {
+    width: 100%;
+    /* header color here! */
+    height: fit-content;
+    /* this is only for a background image! */
+    /* if you want to put images IN the header, 
+you can add them directly to the <div id="header"></div> element! */
+    box-sizing: border-box;
+    margin: var(--margin) 0;
+}
+
+#header img {
+  content: var(--header-image);
+}
+
+.img-header {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
 }
 
 /* navigation section!! */
@@ -65,7 +198,6 @@ main {
     /* navbar color */
     width: 100%;
     margin: var(--margin) 0;
-    
 }
 
 #navbar ul {
@@ -88,6 +220,112 @@ main {
     /* this removes the underline */
 }
 
+.noir #navbar li a {
+  color: var(--headers) !important;
+}
+
+/* navlink colors */
+.raddle {
+  color: #e11;
+}
+.mastodon {
+  color: #e70;
+}
+.aol {
+    color: #ee1;
+}
+.modrinth {
+  color: #1e1;
+}
+.bluesky {
+  color: #1ee;
+}
+.tumblr {
+  color: #17e;
+}
+.discord {
+  color: #71e;
+}
+.github {
+  color: #e1e;
+}
+  
+
+#flex {
+    display: flex;
+}
+
+/* this colors BOTH sidebars
+if you want to style them separately,
+create styles for #leftSidebar and #rightSidebar */
+aside {
+    background-color: var(--sidebar);
+    width: 200px;
+    margin: var(--margin);
+    /* this makes the sidebar text slightly smaller */
+}
+#leftSidebar {
+    margin-left: 0;
+}
+#rightSidebar {
+    margin-right: 0;
+}
+
+#sidebar-inner-left, #sidebar-inner-right {
+      width: 200px;
+      height: 760px;
+      padding: 20px;
+      font-size: smaller;
+      margin: auto;
+}
+.scroll #sidebar-inner-left, .scroll #sidebar-inner-right {
+      position: sticky;
+      top: 0;
+}
+
+#sidebar-inner-left button {
+  background-color: var(--accent-1);
+  border-color: var(--border);
+  color: var(--text-color);
+  margin: auto;
+}
+
+
+/* this is the color of the main content area,
+between the sidebars! */
+main {
+    background-color: var(--main-color);
+    flex: 1;
+    padding: 20px;
+    margin: var(--margin);
+}
+#main {
+    flex: 1;
+}
+#comments {  
+    position: relative;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin: var(--margin);
+    background-image: url('/scripts/sparkle-bg.gif');
+    background-attachment: fixed;
+}
+.magenta #comments, .noir #comments {
+    background-image: none;
+}
+
+#freeform {
+    background: var(--sidebar);
+    color: var(--text-color);
+    border: 1px solid var(--main-color);
+}
+
+/* what's this "order" stuff about??
+allow me to explain!
+if you're using both sidebars, the "order" value
+tells the CSS the order in which to display them.
+left sidebar is 1, content is 2, and right sidebar is 3! */
+
 footer {
     background-color: var(--accent-1);
     /* background color for footer */
@@ -97,6 +335,140 @@ footer {
     text-align: center;
     /* this centers the footer text */
     margin: var(--margin) 0;
+}
+
+h1,
+h2,
+h3,
+.caption {
+    color: var(--headers);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.caption {
+  font-style: italic;
+}
+
+strong {
+    /* this styles bold text */
+    color: var(--headers);
+}
+
+/* this is just a cool box, it's the darker colored one */
+.box {
+    background-color: var(--accent-1);
+    border: 1px solid var(--border);
+    padding: 10px;
+}
+
+/* CSS for extras */
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: var(--accent-1);
+}
+/*.lighttheme {
+    --header-image: url('https://lerariemann.nekoweb.org/header-light.png');
+    --body-bg-image: url('https://lerariemann.nekoweb.org/background-light.png');
+    
+    --accent-1: #f9f;
+    --headers: #90a;
+    --border: #90a;
+    --links: #739;
+    --sidebar: #faf;
+    --main-color: #fbf;
+    --text-color: #010;
+}
+
+.lighttheme .raddle {
+  color: #c00;
+}
+.lighttheme .mastodon {
+  color: #e40;
+}
+.lighttheme .modrinth {
+  color: #0b2;
+}
+.lighttheme .tumblr {
+  color: #08f;
+}
+.lighttheme .discord {
+  color: #60c;
+}
+.lighttheme .github {
+  color: #c0c;
+}*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--accent-1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--sidebar);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}
+
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new width,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+@media only screen and (max-width: 640px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+    
+    #leftSidebar {
+        margin-left: var(--margin);
+    }
+    #rightSidebar {
+        margin-right: var(--margin);
+    }
+
+    /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+    main, #main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
 }
 
 .eightyeightthirtyone {
