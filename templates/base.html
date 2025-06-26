@@ -41,19 +41,20 @@
                         <img src="/img/wikipe-tan.png" width="100%">
                         <p>me</p>
                     </div>
+                    {% set blog_section = get_section(path="blog/_index.md") %}
+                    {% if blog_section %}
                     <div class="box" style="text-align: center; margin-bottom: 10px;">
-                        {% set blog_section = get_section(path="blog/_index.md") %}
-                        {% if blog_section %}
-                            <ul class="recent-posts">
-                            {% for post in blog_section.pages | slice(end=3) %}
-                                <li>
-                                <a href="{{ post.permalink }}">{{ post.title }}</a>
-                                <small>{{ post.date | date(format="%B %d, %Y") }}</small>
-                                </li>
-                            {% endfor %}
-                            </ul>
-                        {% endif %}
+                        <h3>Recent posts</h3>
+                        <ul class="recent-posts">
+                        {% for post in blog_section.pages | slice(end=3) %}
+                            <li>
+                            <a href="{{ post.permalink }}">{{ post.slug }}</a>
+                            <small>{{ post.date | date(format="%m/%d/%Y") }}</small>
+                            </li>
+                        {% endfor %}
+                        </ul>
                     </div>
+                    {% endif %}
                 </div>
             </aside>
             <main>

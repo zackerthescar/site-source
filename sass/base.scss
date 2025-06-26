@@ -122,6 +122,7 @@ pre {
 }
 
 code {
+    font-family: 'Fira Code', monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -260,7 +261,7 @@ if you want to style them separately,
 create styles for #leftSidebar and #rightSidebar */
 aside {
     background-color: var(--sidebar);
-    width: 200px;
+    width: 125px;
     margin: var(--margin);
     /* this makes the sidebar text slightly smaller */
 }
@@ -272,9 +273,9 @@ aside {
 }
 
 #sidebar-inner-left, #sidebar-inner-right {
-      width: 200px;
+      width: 125px;
       height: 760px;
-      padding: 20px;
+      padding: 12px;
       font-size: smaller;
       margin: auto;
 }
@@ -361,7 +362,30 @@ strong {
 .box {
     background-color: var(--accent-1);
     border: 1px solid var(--border);
-    padding: 10px;
+    padding: 0px;
+}
+
+.recent-posts {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.recent-posts li {
+    margin-bottom: 8px;
+    padding-left: 0;
+}
+
+.recent-posts a {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.recent-posts small {
+    display: block;
+    margin-left: 0;
+    font-size: 12px;
+    opacity: 0.8;
 }
 
 /* CSS for extras */
