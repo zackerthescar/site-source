@@ -3,10 +3,7 @@ base_url = "https://zackerthescar.com"
 
 # The site title and description; used in feeds by default.
 title = "r/c/s"
-description = "r/c/s blog of whatever"
-
-# The site theme to use.
-theme = "terminimal"
+description = "r/c/s streams of thought"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -35,25 +32,23 @@ use_full_hack_font = true
 logo_text = "r/c/s"
 author = "r/c/s"
 
-# Enable pagination
-enable_post_view_navigation = true
-post_view_navigation_prompt = "Read more"
-
-# Change color to green
-accent_color = "green"
-background_color = "blue"
-
 # Menu items
 menu_items = [
-    {name = "home", url = "$BASE_URL"},
-    {name = "about me", url = "$BASE_URL/about"},
-    {name = "csci8980-pfpl", url = "$BASE_URL/csci8980-s25"},
-    {name = "archive", url = "$BASE_URL/archive"},
-    {name = "resume", url = "$BASE_URL/docs/resume_shaunloo.pdf"},
-    {name = "links", url = "$BASE_URL/links"},
-    {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true},
+    {name = "home", url = "$BASE_URL", color = "caithe"},
+    {name = "about me", url = "$BASE_URL/about", color = "tayne" },
+    {name = "blog", url = "$BASE_URL/blog", color = "naia"},
+    {name = "csci8980-pfpl", url = "$BASE_URL/csci8980-s25", color = "komi" },
+    {name = "archive", url = "$BASE_URL/archive", color = "lana" },
+    {name = "resume", url = "$BASE_URL/docs/resume_shaunloo.pdf", color = "yasmi" },
+    {name = "links", url = "$BASE_URL/links", color = "wikitori" },
+    {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true, color = "watchdog" },
 ]
 
+# "Listening to" widget in the left, would be nice if
+# we could automate this by pulling some bandcamp thing
+listening_to = { artist = "bit depth", release = "herdbound",link = "https://bitdepth.bandcamp.com/album/herdbound", img = "https://f4.bcbits.com/img/a1269997044_10.jpg"}
+
+# 88x31s
 88x31 = [
     {name = "macos", img = "macos.gif", url = "https://apple.com/macos"},
     {name = "debian", img = "debian.gif", url = "https://www.debian.org/"},

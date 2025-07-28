@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 style="text-align: center;">{{section.title}}</h2>
+
+{{section.content | safe}}
+
+<div class="posts">
+    <ul>
+        {% for post in section.pages %}
+        <li>
+            <h3>
+                {% if post.date %} {{ post.date | date(format="%m/%d/%Y") }} - {% endif %}
+                <a href={{ post.permalink }}>{{ post.title }}</a>
+            </h3>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+{% endblock %}

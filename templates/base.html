@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        {%- block title %}{{ config.title }}{% endblock title %}
+    </title>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/color.css">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/js/katex.min.css">
+    <script src="/js/katex.min.js"></script>
+    <script src="/js/auto-render.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="headerArea">
+            <h1 style="text-align: center;">r/c/s</h1>
+            <nav id="navbar"><ul>
+                {% for item in config.extra.menu_items %}
+                    <li><a class="{{item.color}}" href={{item.url | replace(from='$BASE_URL', to=config.base_url) }}>{{item.name}}</a></li>
+                {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div id="flex">
+            <aside id="leftSidebar">
+                <div id="sidebar-inner-left">
+                    <div class="box" style="text-align: center; margin-bottom: 10px;">
+                        <img src="/img/wikipe-tan.png" width="100%">
+                        <p>wikipe-tan, the ideal r/c/s</p>
+                    </div>
+                    {% set blog_section = get_section(path="blog/_index.md") %}
+                    {% if blog_section %}
+                    <div class="box" style="text-align: center; margin-bottom: 10px;">
+                        <h3 style="margin: 10px;">Recent posts</h3>
+                        <ul class="recent-posts">
+                        {% for post in blog_section.pages | slice(end=3) %}
+                            <li>
+                            <a href="{{ post.permalink }}">{{ post.slug }}</a>
+                            <small>{{ post.date | date(format="%m/%d/%Y") }}</small>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </aside>
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
+            <aside id="rightSidebar">
+                <div id="sidebar-inner-right">
+                    {% if config.extra.listening_to %}
+                    <div class="box" style="text-align: center; margin-bottom: 10px;">
+                        <h3 style="margin: 10px;">Listening to: </h3>
+                        <a href={{config.extra.listening_to.link}}>
+                            <img src={{config.extra.listening_to.img}} width="100%">
+                        </a>
+                        <p><small>{{config.extra.listening_to.artist}} - {{config.extra.listening_to.release}}</small></p>
+                    </div>
+                    {% endif %}
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- This for KaTex to work -->
+    <script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\(", right: "\\)", display: false}
+              ]
+          }
+      );
+    </script>
+    <hr>
+    <footer id="footer">Content &copy 2022-2025 r/c/s | CSS mostly from <a href="https://lerariemann.nekoweb.org/">Lera Riemann</a></footer>
+    <hr>
+    <div class="eightyeightthirtyone">
+         {%- for button in config.extra.88x31 -%}
+         <a href="{{button.url}}">
+            <img alt={{ button.name }} title={{ button.name }} src="{{config.base_url}}/88x31/{{ button.img }}" width=88px height=31px />
+         </a>
+         {%- endfor -%}
+    </div>
+
+</body>
+
+</html>
