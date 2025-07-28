@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://zackerthescar.com"
+base_url = "https://test.zackerthescar.com"
 
 # The site title and description; used in feeds by default.
 title = "r/c/s"
@@ -34,14 +34,14 @@ author = "r/c/s"
 
 # Menu items
 menu_items = [
-    {name = "home", url = "$BASE_URL"},
-    {name = "about me", url = "$BASE_URL/about"},
-    {name = "blog", url = "$BASE_URL/blog"},
-    {name = "csci8980-pfpl", url = "$BASE_URL/csci8980-s25"},
-    {name = "archive", url = "$BASE_URL/archive"},
-    {name = "resume", url = "$BASE_URL/docs/resume_shaunloo.pdf"},
-    {name = "links", url = "$BASE_URL/links"},
-    {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true},
+    {name = "home", url = "$BASE_URL", color = "caithe"},
+    {name = "about me", url = "$BASE_URL/about", color = "tayne" },
+    {name = "blog", url = "$BASE_URL/blog", color = "naia"},
+    {name = "csci8980-pfpl", url = "$BASE_URL/csci8980-s25", color = "komi" },
+    {name = "archive", url = "$BASE_URL/archive", color = "lana" },
+    {name = "resume", url = "$BASE_URL/docs/resume_shaunloo.pdf", color = "yasmi" },
+    {name = "links", url = "$BASE_URL/links", color = "wikitori" },
+    {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true, color = "watchdog" },
 ]
 
 # "Listening to" widget in the left, would be nice if
