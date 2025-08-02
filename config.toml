@@ -66,6 +66,11 @@ listening_to = { artist = "bit depth", release = "herdbound",link = "https://bit
     {name = "dolby", img = "dolby_digital.gif", url = "#"},
     {name = "web3", img = "web3.gif", url = "#"},
     {name = "mt32", img = "mt32now.gif", url = "#"}
- ]
+]
+
+webrings = [
+    { name = "Twitching Whiskers", onclick="weblineWarp();", img="/img/train.png"},
+    { name = "Nix", next="https://nixwebr.ing/next/zackerthescar", prev="https://nixwebr.ing/prev/zackerthescar", rand="https://nixwebr.ing/rand", img="/img/NixOS_logo.svg"}
+]
 
 page_titles = "combined"
