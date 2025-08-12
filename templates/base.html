@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="/fonts.css">
     <link rel="stylesheet" href="/color.css">
     <link rel="stylesheet" href="/base.css">
-    <link rel="stylesheet" href="/js/katex.min.css">
-    <script src="/js/katex.min.js"></script>
-    <script src="/js/auto-render.min.js"></script>
-    <script src="/js/webline.js"></script>
+    {%- block headaddons %}
+    {% endblock headaddons %}
 </head>
 
 <body>
@@ -83,20 +81,8 @@
             </aside>
         </div>
     </div>
-    <!-- This for KaTex to work -->
-    <script>
-      renderMathInElement(
-          document.body,
-          {
-              delimiters: [
-                  {left: "$$", right: "$$", display: true},
-                  {left: "\\[", right: "\\]", display: true},
-                  {left: "$", right: "$", display: false},
-                  {left: "\\(", right: "\\)", display: false}
-              ]
-          }
-      );
-    </script>
+    {%- block footaddons %}
+    {% endblock footaddons %}
     <hr>
     <footer id="footer">Content &copy 2022-2025 r/c/s | CSS mostly from <a href="https://lerariemann.nekoweb.org/">Lera Riemann</a></footer>
     <hr>
