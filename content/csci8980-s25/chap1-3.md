@@ -1,6 +1,7 @@
 +++
 title = "PFPL Commentary, Chapters 1-3"
 path = "csci8980-s25/chap1-3"
+template = "index-latex.html"
 
 [taxonomies]
 tags = [ "pfpl" ]
