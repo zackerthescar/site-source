@@ -5,6 +5,10 @@ base_url = "https://zackerthescar.com"
 title = "r/c/s"
 description = "r/c/s streams of thought"
 
+generate_feeds = true
+feed_filenames = [ "atom.xml", "rss.xml" ]
+
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
