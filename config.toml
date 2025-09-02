@@ -68,7 +68,15 @@ listening_to = { artist = "bit depth", release = "herdbound",link = "https://bit
     {name = "enby", img = "enby.png", url = "#"},
     {name = "dolby", img = "dolby_digital.gif", url = "#"},
     {name = "web3", img = "web3.gif", url = "#"},
-    {name = "mt32", img = "mt32now.gif", url = "#"}
+    {name = "mt32", img = "mt32now.gif", url = "#"},
+    {name = "atom", img = "valid-atom.png", url = "http://www.rssboard.org/rss-validator/check.cgi?url=https%3A//zackerthescar.com/atom.xml"},
+    {name = "firefox2", img = "firefox.png", url = "https://mozilla.com/firefox/"},
+    {name = "archive", img = "IA.gif", url = "https://archive.org"},
+    {name = "ublock", img = "ublock.png", url = "https://ublockorigin.com"},
+    {name = "nixos", img = "nix.png", url = "https://nixos.org"},
+    {name = "computer", img = "computer_get.jpg", url = "https://freegeektwincities.org"},
+    {name = "chill-pill", img = "chill_pill.gif", url = "#"},
+    {name = "momg", img = "momg-badge.gif", url = "https://momg.neocities.org/"}
 ]
 
 webrings = [
