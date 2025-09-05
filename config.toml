@@ -49,7 +49,7 @@ menu_items = [
 
 # "Listening to" widget in the left, would be nice if
 # we could automate this by pulling some bandcamp thing
-listening_to = { artist = "bit depth", release = "herdbound",link = "https://bitdepth.bandcamp.com/album/herdbound", img = "https://f4.bcbits.com/img/a1269997044_10.jpg"}
+listening_to = { artist = "car seat headrest", release = "how to leave town", link = "https://carseatheadrest.bandcamp.com/album/how-to-leave-town", img = "https://f4.bcbits.com/img/a3272316465_10.jpg"}
 
 # 88x31s
 88x31 = [
