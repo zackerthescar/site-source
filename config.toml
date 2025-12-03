@@ -81,7 +81,7 @@ listening_to = { artist = "car seat headrest", release = "how to leave town", li
 
 webrings = [
     { name = "Twitching Whiskers", onclick="weblineWarp();", img="/img/train.png"},
-    { name = "Nix", next="https://nixwebr.ing/next/zackerthescar", prev="https://nixwebr.ing/prev/zackerthescar", rand="https://nixwebr.ing/rand", img="/img/NixOS_logo.svg"}
+    { name = "Nix", next="https://nixwebr.ing/next/zackerthescar", prev="https://nixwebr.ing/prev/zackerthescar", rand="https://nixwebr.ing", img="/img/NixOS_logo.svg"}
 ]
 
 page_titles = "combined"
