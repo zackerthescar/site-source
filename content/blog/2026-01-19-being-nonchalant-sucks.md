@@ -48,6 +48,6 @@ when i was on the L train first thinking about this it went something like this:
 
 <center>
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/TQTOREbbQGQ?si=FNucUbqML4mAQCZS&amp;start=127" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe height="360" src="https://www.youtube.com/embed/TQTOREbbQGQ?si=FNucUbqML4mAQCZS&amp;start=127" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </center>

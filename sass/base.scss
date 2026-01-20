@@ -274,6 +274,10 @@ main img {
     image-rendering: pixelated;
 }
 
+main iframe {
+    width: 100%;
+}
+
 #main {
     flex: 1;
 }
