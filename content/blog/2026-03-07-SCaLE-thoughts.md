@@ -81,3 +81,9 @@ I had the webhook idea during a talk and went to go hack one together. I
 thought I could have just gotten an off-the-shelf webhook part. Nope. The
 listener that listens to GitHub is a Flask app. I should _not_ need a Flask
 app to listen to POST requests/
+
+On the bright side, I _did_ have an AI oneshot this, so that's a plus
+
+# I did a github thing
+
+![pic of a github badge](/img/IMG_7644.jpg)
