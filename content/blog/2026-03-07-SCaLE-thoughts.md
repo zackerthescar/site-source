@@ -75,3 +75,9 @@ if I'm by myself, and don't already have things to go thru in my fridge
 or freezer, it's a good bet that I'll get Japanese food. Weird. I'll need
 to expand my horizons more.
 
+# Why isn't there an off-the-shelf webhook listener?
+
+I had the webhook idea during a talk and went to go hack one together. I
+thought I could have just gotten an off-the-shelf webhook part. Nope. The
+listener that listens to GitHub is a Flask app. I should _not_ need a Flask
+app to listen to POST requests/
