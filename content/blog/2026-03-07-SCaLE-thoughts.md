@@ -84,6 +84,19 @@ app to listen to POST requests/
 
 On the bright side, I _did_ have an AI oneshot this, so that's a plus
 
+# It's so, so important to make friends in this environment
+
+I had the fortunate opportunity of being part of Fyra Labs' team for
+this event - having _any_ sort of organization behind me unlocked all
+sorts of opprtunities for me, from OGC with Bazzite, ShadowBlip, and more,
+to DeepComputing and the RISC-V community. 
+
 # I did a github thing
 
-![pic of a github badge](/img/IMG_7644.jpg)
+![pic of a github badge](/img/IMG_7652.jpg)
+
+Yes, this is a _real_ GB emulator. This will be open source once I have
+the time, but the long-and-short of it is running peanut_gb on the rp2350
+and blitting to the screen, which is a st7789 in 8080 8-bit parallel mode.
+Believe it or not, that should be enough for some frontier models to do
+some amount of magic. Writeup soon.
