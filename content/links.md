@@ -7,7 +7,7 @@ path = "links"
 
 These people do great stuff:
 - [bigaouette.com](https://bigaouette.com/)
-- [anne.cx](https://anne.cx)
+- [syd.sh](https://syd.sh)
 - [keltono.net](https://keltono.net)
 - [heen.dev](https://heen.dev)
 - [autumns.page](https://autumns.page)
