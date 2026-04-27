@@ -38,3 +38,7 @@ definitely doesn't, and you can ask people around me on how that story has
 touched me. Humans, as it turns out, are really messy, and if you try to make 
 a clean story, you end up losing the humanity. UNBEATABLE has tons of humanity
 in it. I think that's why I like it so much.
+
+Oh and the music *bops* so much. I know the devs took 7 years to make this game,
+I just think a good chunk of why this game bops so much is because they spent so
+much effort into the music and the end result shows (in a really good way).
