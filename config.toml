@@ -20,11 +20,8 @@ taxonomies = [
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-[markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
-highlight_theme = "boron"
+[markdown.highlighting]
+theme = "github-dark"
 
 [extra]
 # Put all your custom variables here
@@ -42,14 +39,13 @@ menu_items = [
     {name = "about me", url = "$BASE_URL/about", color = "tayne" },
     {name = "blog", url = "$BASE_URL/blog", color = "naia"},
     {name = "csci8980-pfpl", url = "$BASE_URL/csci8980-s25", color = "komi" },
-    {name = "resume", url = "$BASE_URL/docs/resume_shaunloo.pdf", color = "yasmi" },
     {name = "links", url = "$BASE_URL/links", color = "wikitori" },
     {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true, color = "watchdog" },
 ]
 
 # "Listening to" widget in the left, would be nice if
 # we could automate this by pulling some bandcamp thing
-listening_to = { artist = "bit depth", release = "herdbound",link = "https://bitdepth.bandcamp.com/album/herdbound", img = "https://f4.bcbits.com/img/a1269997044_10.jpg"}
+listening_to = { artist = "ninajirachi", release = "i love my computer", link = "https://ninajirachi.bandcamp.com/album/i-love-my-computer", img = "https://f4.bcbits.com/img/a0649909828_10.jpg"}
 
 # 88x31s
 88x31 = [
@@ -81,7 +77,7 @@ listening_to = { artist = "bit depth", release = "herdbound",link = "https://bit
 
 webrings = [
     { name = "Twitching Whiskers", onclick="weblineWarp();", img="/img/train.png"},
-    { name = "Nix", next="https://nixwebr.ing/next/zackerthescar", prev="https://nixwebr.ing/prev/zackerthescar", rand="https://nixwebr.ing/rand", img="/img/NixOS_logo.svg"}
+    { name = "Nix", next="https://nixwebr.ing/next/zackerthescar", prev="https://nixwebr.ing/prev/zackerthescar", rand="https://nixwebr.ing", img="/img/NixOS_logo.svg"}
 ]
 
 page_titles = "combined"
