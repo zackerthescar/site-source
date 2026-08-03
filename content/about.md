@@ -8,14 +8,16 @@ of those three letters. It doesn't matter which one you refer me to.
 
 I'm a programmer, and I'm particularly fond of C even as I loathe and
 hate _many_ aspects of that language. I'm also good at Python, Rust,
-OCaml, TypeScript, and okay at C++, Java, and Haskell.
+OCaml, TypeScript, and okay at C++, Java, and Haskell. I'm also writing
+Go now apparently. I'm not good at Go.
 
 I earned my BS and MS in Computer Science at the University of Minnesota
 in May 2024 and May 2025 respectively.  
 
-If you're a prospective employer, check out 
-[my resume](/docs/resume_shaunloo.pdf)!
+If you're a prospective employer, check out [my resume](/docs/resume_rileyloo.pdf)!
 
+
+I'm currently working on virtual machines and am loving it!
 I love the craft of low-level programming and the art of understanding
 a machine's aspects to extract the most performance. I was a teaching
 assistant for UMN's Machine Architecture course for three semesters,
@@ -29,7 +31,7 @@ challenges for ACM UMN's CTF events, writeups of which I might post
 sometimes. I am not, however, interested in cryptocurrency. If you
 contact me with any crypto-related stuff I will plonk you and move on.
 
-I'm also a regular volunteer at 
+I was once a regular volunteer at 
 [Free Geek Twin Cities](https://www.freegeektwincities.org).
 I truly believe in the cause that Free Geek Twin Cities champions, and the 
 personnel there are extremely friendly and approchable. 

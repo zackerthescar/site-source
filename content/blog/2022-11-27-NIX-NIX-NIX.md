@@ -65,7 +65,7 @@ Some installation notes and stumbling blocks:
 stumbling block for people without DHCP (ahem, ACM UMN server closet). To get
 around this, we first tell the live system the static IP
 
-    ```
+    ```bash
     ifconfig <dev name> xxx.xxx.xxx.xxx netmask xxx.xxx.xxx.xxx
     route add default gw xxx.xxx.xxx.xxx
     echo "nameserver 8.8.8.8 >> /etc/resolv.conf

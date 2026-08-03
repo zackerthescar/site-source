@@ -6,6 +6,13 @@ date = 2024-07-27
 tags = [ "music", "professional audio", "saas" ]
 +++
 
+# update 01/19/2026
+
+some parts of this is inaccurate, especially on the ilok cloud.
+things haven't changed much in this space, and on the whole i
+still stand by this piece, but beware that part on ilok cloud
+is just wholely wrong.
+
 # quick update
 
 yeah I haven't updated my site in a year. i've gone thru quite a lot.

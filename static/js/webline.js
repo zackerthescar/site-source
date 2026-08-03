@@ -3,8 +3,7 @@ var links = [
     "https://kaianew.github.io",
     "https://minizou.dev/blog",
     "https://olive.meownik.com/about",
-    "https://keltono.net",
-    "https://alison.ltd"
+    "https://keltono.net"
 ];
 
 function weblineWarp() {
