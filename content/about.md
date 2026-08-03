@@ -14,11 +14,7 @@ Go now apparently. I'm not good at Go.
 I earned my BS and MS in Computer Science at the University of Minnesota
 in May 2024 and May 2025 respectively.  
 
-~~If you're a prospective employer, check out [my resume](/docs/resume_shaunloo.pdf)!~~
-I am not actively looking for work at this time. My resume link remains working for
-my most updated resume, but unless you're working on something I think is _very cool_,
-I'm not likely to entertain an interview at this time. (I think my work is very cool,
-at least right now).
+If you're a prospective employer, check out [my resume](/docs/resume_rileyloo.pdf)!
 
 
 I'm currently working on virtual machines and am loving it!
