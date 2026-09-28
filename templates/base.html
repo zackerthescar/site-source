@@ -41,7 +41,7 @@
                     <div class="box" style="text-align: center; margin-bottom: 10px;">
                         <h3 style="margin: 10px;">Recent posts</h3>
                         <ul class="recent-posts">
-                        {% for post in blog_section.pages | slice(end=3) %}
+                        {% for post in blog_section.pages[:3] %}
                             <li>
                             <a href="{{ post.permalink }}">{{ post.slug }}</a>
                             <small>{{ post.date | date(format="%m/%d/%Y") }}</small>
@@ -92,7 +92,7 @@
     <footer id="footer">Content &copy 2022-2026 r/c/s CC-BY-SA 4.0 | CSS mostly from <a href="https://codexarchonic.nekoweb.org/">codexarchonic</a></footer>
     <hr>
     <div class="eightyeightthirtyone">
-         {%- for button in config.extra.88x31 -%}
+         {%- for button in config.extra.buttons -%}
          <a href="{{button.url}}">
             <img alt={{ button.name }} title={{ button.name }} src="{{config.base_url}}/88x31/{{ button.img }}" width=88px height=31px />
          </a>

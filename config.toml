@@ -48,7 +48,7 @@ menu_items = [
 listening_to = { artist = "ninajirachi", release = "i love my computer", link = "https://ninajirachi.bandcamp.com/album/i-love-my-computer", img = "https://f4.bcbits.com/img/a0649909828_10.jpg"}
 
 # 88x31s
-88x31 = [
+buttons = [
     {name = "macos", img = "macos.gif", url = "https://apple.com/macos"},
     {name = "debian", img = "debian.gif", url = "https://www.debian.org/"},
     {name = "ffmpeg", img = "ffmpeg.gif", url = "https://ffmpeg.org/"},
