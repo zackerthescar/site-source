@@ -77,7 +77,8 @@ buttons = [
 
 webrings = [
     { name = "Twitching Whiskers", onclick="weblineWarp();", img="/img/train.png"},
-    { name = "Nix", next="https://nixwebr.ing/next/zackerthescar", prev="https://nixwebr.ing/prev/zackerthescar", rand="https://nixwebr.ing", img="/img/NixOS_logo.svg"}
+    { name = "Nix", next="https://nixwebr.ing/next/zackerthescar", prev="https://nixwebr.ing/prev/zackerthescar", rand="https://nixwebr.ing", img="/img/NixOS_logo.svg"},
+    { name = "Blog", next="https://blogclub.org/ring/?from=zackerthescar.com&to=next", prev="https://blogclub.org/ring/?from=zackerthescar.com&to=prev", rand="https://blogclub.org/ring/?from=zackerthescar.com&to=random", img="/img/blog.svg"}
 ]
 
 page_titles = "combined"
