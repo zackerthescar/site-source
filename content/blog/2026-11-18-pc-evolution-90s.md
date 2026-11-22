@@ -48,7 +48,7 @@ Just to put into perspective, this was what the hacker saw in 1993:
 |CPU| RISC Superscalar CPU 50-200MHz, out-of-order |  386-486 @ 33-66MHz  |
 |  | | Pentium @ 60-66MHz
 |RAM| 16MB - 64MB  | 4MB - 16MB |
-|HDD| SCSI Bus Mastering 400MB-1GB | IDE, ~100MB-400MB |
+|HDD| SCSI 400MB-1GB, DMA | IDE, ~100MB-400MB, PIO |
 |GFX| 16-bit or 24-bit color, >= 1152x900 | ISA or VLB VGA, 256 colors, 320x240, 640x480  |
 |3D| SGI Indigo2 XL, XZ, Extreme | lmao, no |
 |NET| 10BASE-2 or 10BASE-T network | 2400 - 14.4k modem |
