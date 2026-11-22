@@ -274,6 +274,49 @@ main img {
     image-rendering: pixelated;
 }
 
+/* article figures: centered at half width, like a lone
+\includegraphics[width=0.5\linewidth] in a LaTeX doc */
+.post img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 1.5em auto;
+}
+
+@media only screen and (max-width: 640px) {
+    .post img {
+        width: 90%;
+    }
+}
+
+/* article tables: booktabs-style (top/mid/bottom rules, no verticals) */
+.post table {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 1.5em auto;
+    border-collapse: collapse;
+    border-top: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+
+.post thead th {
+    border-bottom: 1px solid var(--text-color);
+    color: var(--headers);
+}
+
+.post th,
+.post td {
+    padding: 0.35em 1em;
+    vertical-align: top;
+}
+
+.post th:not([style*="text-align"]),
+.post td:not([style*="text-align"]) {
+    text-align: left;
+}
+
 main iframe {
     width: 100%;
 }

@@ -4,6 +4,8 @@
 
 {% if page.date %}<span class="date">{{page.date}}</span>{% endif %}
 {% if page.title %}<h1>{{page.title}}</h1>{% endif %}
+<article class="post">
 {{page.content | safe}}
+</article>
 
 {% endblock %}
