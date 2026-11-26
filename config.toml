@@ -43,9 +43,15 @@ menu_items = [
     {name = "GitHub", url = "https://github.com/zackerthescar", newtab = true, color = "watchdog" },
 ]
 
-# "Listening to" widget in the left, would be nice if
-# we could automate this by pulling some bandcamp thing
-listening_to = { artist = "lex walton", release = "ultimate love forever", link = "https://youthagainstsatan.bandcamp.com/album/ultimate-love-forever", img = "https://f4.bcbits.com/img/a3806305302_10.jpg"}
+# "Listening to" widget. Either a Bandcamp album/track URL (artist, title
+# and cover are scraped at build time), or a manual table:
+# listening_to = { artist = "...", release = "...", link = "...", img = "..." }
+
+# historicals
+#listening_to = "https://carseatheadrest.bandcamp.com/album/how-to-leave-town" (2025)
+#listening_to = "https://ninajirachi.bandcamp.com/album/i-love-my-computer" (2026 Jan-Nov)
+#listening_to = "https://youthagainstsatan.bandcamp.com/album/ultimate-love-forever" (2026 Nov)
+listening_to = "https://newgroundsdeathrugby.bandcamp.com/album/someone-could-get-hurt"
 
 # 88x31s
 buttons = [

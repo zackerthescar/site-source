@@ -59,13 +59,34 @@
             <aside id="rightSidebar">
                 <div id="sidebar-inner-right">
                     {% if config.extra.listening_to %}
+                    {% set lt = config.extra.listening_to %}
+                    {% set lt_link = "" %}
+                    {% if lt is string %}
+                        {# Bandcamp URL: scrape og:title ("RELEASE, by ARTIST") and og:image at build time #}
+                        {% set bc = load_data(url=lt, format="plain", required=false) %}
+                        {% if bc %}
+                            {% set og_title = bc | split(pat='property="og:title" content="') | nth(n=1) | split(pat='"') | first %}
+                            {% set og_img = bc | split(pat='property="og:image" content="') | nth(n=1) | split(pat='"') | first %}
+                            {% set lt_artist = og_title | split(pat=", by ") | last %}
+                            {% set lt_release = og_title | replace(from=", by " ~ lt_artist, to="") %}
+                            {% set lt_link = lt %}
+                            {% set lt_img = og_img | replace(from="_5.jpg", to="_10.jpg") %}
+                        {% endif %}
+                    {% else %}
+                        {% set lt_artist = lt.artist %}
+                        {% set lt_release = lt.release %}
+                        {% set lt_link = lt.link %}
+                        {% set lt_img = lt.img %}
+                    {% endif %}
+                    {% if lt_link %}
                     <div class="box" style="text-align: center; margin-bottom: 10px;">
                         <h3 style="margin: 10px;">Listening to: </h3>
-                        <a href={{config.extra.listening_to.link}}>
-                            <img src={{config.extra.listening_to.img}} width="100%">
+                        <a href="{{ lt_link }}">
+                            <img src="{{ lt_img }}" width="100%">
                         </a>
-                        <p><small>{{config.extra.listening_to.artist}} - {{config.extra.listening_to.release}}</small></p>
+                        <p><small>{{ lt_artist | lower | safe }} - {{ lt_release | lower | safe }}</small></p>
                     </div>
+                    {% endif %}
                     {% endif %}
                     {% if config.extra.webrings %}
                     <div class="box" style="text-align: center; margin-bottom: 10px;">
