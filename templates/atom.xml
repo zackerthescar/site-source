@@ -19,30 +19,25 @@
     <generator uri="https://www.getzola.org/">Zola</generator>
     {% if last_updated is defined %}<updated>{{ last_updated | date(format="%Y-%m-%dT%H:%M:%S%:z") }}</updated>{% endif %}
     <id>{{ feed_url | safe }}</id>
+    <author>
+        <name>{{ config.extra.author }}</name>
+        <email>{{ config.extra.author_email }}</email>
+    </author>
     {%- for page in pages %}
     <entry xml:lang="{{ page.lang }}">
         <title>{{ page.title }}</title>
         <published>{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}</published>
         <updated>{% if page.updated %}{{ page.updated | date(format="%Y-%m-%dT%H:%M:%S%:z") }}{% else %}{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}{% endif %}</updated>
-        {% for author in page.authors %}
         <author>
-          <name>
-            {{ author }}
-          </name>
+            <name>{{ page.authors[0] | default(value=config.extra.author) }}</name>
+            <email>{{ config.extra.author_email }}</email>
         </author>
-        {% else %}
-        <author>
-          <name>
-            {%- if config.author -%}
-              {{ config.author }}
-            {%- else -%}
-              Unknown
-            {%- endif -%}
-          </name>
-        </author>
-        {% endfor %}
         <link rel="alternate" type="text/html" href="{{ page.permalink | safe }}"/>
         <id>{{ page.permalink | safe }}</id>
+        {%- if page.summary %}
+        <summary type="html">{{ page.summary | replace(from='href="/', to='href="' ~ config.base_url ~ '/') | replace(from='src="/', to='src="' ~ config.base_url ~ '/') }}</summary>
+        {%- endif %}
+        <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ page.content | replace(from='href="/', to='href="' ~ config.base_url ~ '/') | replace(from='src="/', to='src="' ~ config.base_url ~ '/') }}</content>
     </entry>
     {%- endfor %}
 </feed>

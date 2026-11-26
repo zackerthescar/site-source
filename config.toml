@@ -32,6 +32,7 @@ use_full_hack_font = true
 # Site details
 logo_text = "r/c/s"
 author = "r/c/s"
+author_email = "riley@zackerthescar.com"
 
 # Menu items
 menu_items = [
@@ -78,7 +79,19 @@ buttons = [
     {name = "nixos", img = "nix.png", url = "https://nixos.org"},
     {name = "computer", img = "computer_get.jpg", url = "https://freegeektwincities.org"},
     {name = "chill-pill", img = "chill_pill.gif", url = "#"},
-    {name = "momg", img = "momg-badge.gif", url = "https://momg.neocities.org/"}
+    {name = "momg", img = "momg-badge.gif", url = "https://momg.neocities.org/"},
+    {name = "claude", img = "claude.gif", url = "https://claude.ai"},
+    {name = "june", img = "fishe.png", url = "https://june.fish"},
+    {name = "kglw", img = "kglw_bt_bl.png", url = "https://kinggizzardandthelizardwizard.com/bootlegger"},
+    {name = "jaiden", img = "jade.png", url = "https://jaiden.sh"},
+    {name = "thinking", img = "thinking.gif", url = "#"},
+    {name = "kagi", img = "kagi.png", url = "#"},
+    {name = "hellzone", img = "hellzone.gif", url = "https://hellzone.org"},
+    {name = "modarchive", img = "modarchive.gif", url = "https://modarchive.org"},
+    {name = "oplarchive", img = "OPL3.png", url = "https://opl.wafflenet.com" },
+    {name = "anti", img = "anti.gif", url = "#"},
+    {name = "sb32", img = "sdblast.gif", url = "#"},
+    {name = "sw", img = "sw.png", url = "https://kagi.com/smallweb"}
 ]
 
 webrings = [

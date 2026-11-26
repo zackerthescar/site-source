@@ -516,13 +516,29 @@ feel free to play around with the order!
     }
 }
 
+/* 88x31 wall: always a multiple of 3 columns (3 / 6 / 9 / 12).
+   36 buttons fills every row at every width. */
 .eightyeightthirtyone {
+    display: grid;
+    grid-template-columns: repeat(3, 88px);
     justify-content: center;
-    flex-grow: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
     image-rendering: pixelated;
+
+    a, img {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 560px) {
+    .eightyeightthirtyone { grid-template-columns: repeat(6, 88px); }
+}
+
+@media only screen and (min-width: 830px) {
+    .eightyeightthirtyone { grid-template-columns: repeat(9, 88px); }
+}
+
+@media only screen and (min-width: 1100px) {
+    .eightyeightthirtyone { grid-template-columns: repeat(12, 88px); }
 }
 
 .giallo-l {
