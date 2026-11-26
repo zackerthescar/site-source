@@ -93,12 +93,12 @@
                         <h3 style="margin: 10px;">Webrings!</h3>
                         {% for webring in config.extra.webrings %}
                             <hr>
-                            {% if webring.next and webring.prev and webring.rand %}
-                            <a href={{webring.prev}}><<</a>
-                            <a href={{webring.rand}}><img src={{webring.img}} width="20%"></a>
-                            <a href={{webring.next}}>>></a>
-                            {% elif webring.onclick %}
-                            <a onclick={{webring.onclick}}><img src={{webring.img}} width="100%"></a>
+                            {% if webring.onclick %}
+                            <a href="#" onclick="{{ webring.onclick }} return false;" title="{{ webring.name }}"><img src="{{ get_url(path=webring.img) }}" alt="{{ webring.name }}" width="100%"></a>
+                            {% else %}
+                            {% if webring.prev %}<a href="{{ webring.prev }}" title="{{ webring.name }}: previous">&lt;&lt;</a>{% endif %}
+                            <a href="{{ webring.rand | default(value=webring.next | default(value='#')) }}" title="{{ webring.name }}"><img src="{{ get_url(path=webring.img) }}" alt="{{ webring.name }}" width="20%"></a>
+                            {% if webring.next %}<a href="{{ webring.next }}" title="{{ webring.name }}: next">&gt;&gt;</a>{% endif %}
                             {% endif %}
                         {% endfor %}
                     </div>
